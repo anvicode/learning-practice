@@ -42,3 +42,63 @@ class bookmark is a template for variety of instances of bookmarks
             - instance
                 - new bookmark (url)
 """
+
+""" 1.2 """
+
+
+# BEGIN class Dwarf
+class Dwarf:
+    name = "Johnny"
+    age = 29
+    gender = "male"
+    height = 102
+    weight = 85
+    hair_color = "black"
+    eye_color = "hazel"
+
+
+Dwarf_Johnny = Dwarf()
+
+print(f"Dwarf: {Dwarf_Johnny.name}")
+print(f"Age: {Dwarf_Johnny.age}")
+print(f"Gender: {Dwarf_Johnny.gender}")
+print(f"Height: {Dwarf_Johnny.height}")
+print(f"Weight: {Dwarf_Johnny.weight}")
+print(f"Hair color: {Dwarf_Johnny.hair_color}")
+print(f"Eye color: {Dwarf_Johnny.eye_color}")
+
+Dwarf_Stella = Dwarf()
+
+Dwarf_Stella.name = "Stella"
+Dwarf_Stella.age = 25
+Dwarf_Stella.gender = "female"
+Dwarf_Stella.height = 90
+Dwarf_Stella.weight = 50
+Dwarf_Stella.hair_color = "brown"
+Dwarf_Stella.eye_color = "hazel"
+
+print()
+print(f"Dwarf: {Dwarf_Stella.name}")
+print(f"Age: {Dwarf_Stella.age}")
+print(f"Gender: {Dwarf_Stella.gender}")
+print(f"Height: {Dwarf_Stella.height}")
+print(f"Weight: {Dwarf_Stella.weight}")
+print(f"Hair color: {Dwarf_Stella.hair_color}")
+print(f"Eye color: {Dwarf_Stella.eye_color}")
+
+
+""" 1.3 BEGIN """
+d2 = Dwarf()
+d2.name = "Lily"
+
+print()
+print(d2.name)  # d2.name = "Lily"
+
+d3 = d2  # assign d2 to d3
+
+d3.name = "Hope"  # change d3.name to "Hope"
+
+print(d2.name)  # must be "Lily", but it is "Hope"
+print(d3.name)  # Hope
+""" 1.3 END """
+# END class Dwarf
