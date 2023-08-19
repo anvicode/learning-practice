@@ -206,3 +206,126 @@ a1.get_info()
 a1.play_track(track="Time")
 a1.play_track(track="The Great Gig in the Sky")
 a1.get_info()
+
+
+# Task 5
+
+
+class Fraction:
+    def __init__(self, numerator: int, denominator: int) -> None:
+        self.numerator: int = numerator
+        self.denominator: int = denominator
+
+    def __str__(self) -> str:
+        return f"Fraction: {self.numerator}/{self.denominator}"
+
+    @staticmethod
+    def gcd(m: int, n: int) -> int:
+        """greatest common divisor (gcd)"""
+        while m != n:
+            if m > n:
+                m = m - n
+            else:
+                n = n - m
+        return n
+
+    def __add__(self, other: "Fraction") -> "Fraction":
+        # same denominator
+        if self.denominator == other.denominator:
+            numerator: int = self.numerator + other.numerator
+            denominator: int = other.denominator
+            return Fraction(
+                numerator=numerator // self.gcd(m=numerator, n=denominator),
+                denominator=denominator // self.gcd(m=numerator, n=denominator),
+            )
+        # not the same denominator
+        else:
+            numerator: int = (
+                self.numerator * other.denominator + other.numerator * self.denominator
+            )
+            denominator: int = self.denominator * other.denominator
+            return Fraction(
+                numerator=numerator // self.gcd(m=numerator, n=denominator),
+                denominator=denominator // self.gcd(m=numerator, n=denominator),
+            )
+
+    def __sub__(self, other: "Fraction") -> "Fraction":
+        if self.denominator == other.denominator:
+            numerator: int = self.numerator - other.numerator
+            denominator: int = other.denominator
+            return Fraction(
+                numerator=numerator,
+                denominator=denominator,
+            )
+        else:
+            numerator: int = (
+                self.numerator * other.denominator - other.numerator * self.denominator
+            )
+            denominator: int = self.denominator * other.denominator
+            return Fraction(
+                numerator=numerator,
+                denominator=denominator,
+            )
+
+    def __mul__(self, other: "Fraction") -> "Fraction | int":
+        numerator: int = self.numerator * other.numerator
+        denominator: int = self.denominator * other.denominator
+        return Fraction(numerator=numerator, denominator=denominator)
+
+    def __truediv__(self, other: "Fraction") -> "Fraction":
+        numerator: int = self.numerator * other.denominator
+        denominator: int = self.denominator * other.numerator
+        return Fraction(numerator=numerator, denominator=denominator)
+
+    def __eq__(self, other: "Fraction") -> bool:
+        return self.numerator * other.denominator == other.numerator * self.denominator
+
+    def __lt__(self, other: "Fraction") -> bool:
+        if self.denominator == other.denominator:
+            return self.numerator < other.numerator
+        else:
+            return (
+                self.numerator * other.denominator < other.numerator * self.denominator
+            )
+
+    def __le__(self, other: "Fraction") -> bool:
+        if self.denominator == other.denominator:
+            return self.numerator <= other.numerator
+        else:
+            return (
+                self.numerator * other.denominator <= other.numerator * self.denominator
+            )
+
+    def __gt__(self, other: "Fraction") -> bool:
+        if self.denominator == other.denominator:
+            return self.numerator > other.numerator
+        else:
+            return (
+                self.numerator * other.denominator > other.numerator * self.denominator
+            )
+
+    def __ge__(self, other: "Fraction") -> bool:
+        if self.denominator == other.denominator:
+            return self.numerator >= other.numerator
+        else:
+            return (
+                self.numerator * other.denominator >= other.numerator * self.denominator
+            )
+
+
+f1: Fraction = Fraction(numerator=3, denominator=4)
+f2: Fraction = Fraction(numerator=5, denominator=7)
+
+
+print("\nTask 5 ----------------------")
+print(f1)
+print(f2)
+print(f1 + f2)
+print(f1 - f2)
+print(f1 * f2)
+print(f1 / f2)
+print(f1 == f2)
+print(f1 < f2)
+print(f1 > f2)
+print(f1 <= f2)
+print(f1 >= f2)
