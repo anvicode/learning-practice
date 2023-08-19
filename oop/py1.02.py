@@ -102,3 +102,54 @@ print(d2.name)  # must be "Lily", but it is "Hope"
 print(d3.name)  # Hope
 """ 1.3 END """
 # END class Dwarf
+
+
+# BEGIN class Weapon
+class Weapon:
+    title = "Morningstar"
+    title_in_dwarven = "sanád-vîr"
+    title_in_elvish = "rifa-ila"
+    title_in_goblin = "smungras-ex"
+    title_in_human = "sabu-ama"
+    type_of_weapon = "Edged"
+    type_of_damage = "Piercing"
+    rarity = "Common"
+    damage = 11
+
+
+w1 = Weapon()
+
+print()
+print(f"Title: {w1.title}")
+print(f"Title in dwarven: {w1.title_in_dwarven}")
+print(f"Title in elvish: {w1.title_in_elvish}")
+print(f"Title in goblin: {w1.title_in_goblin}")
+print(f"Title in human: {w1.title_in_human}")
+print(f"Type of weapon: {w1.type_of_weapon}")
+print(f"Type of damage: {w1.type_of_damage}")
+print(f"Rarity: {w1.rarity}")
+print(f"Damage: {w1.damage}")
+
+w2 = Weapon()
+
+w2.title = "Scourge"
+w2.title_in_dwarven = "abshoth"
+w2.title_in_elvish = "fétha"
+w2.title_in_goblin = "song"
+w2.title_in_human = "etuk"
+w2.type_of_weapon = "Edged"
+w2.type_of_damage = "Slashing"
+w2.rarity = "Rare"
+w2.damage = 15
+
+print()
+print(f"Title: {w2.title}")
+print(f"Title in dwarven: {w2.title_in_dwarven}")
+print(f"Title in elvish: {w2.title_in_elvish}")
+print(f"Title in goblin: {w2.title_in_goblin}")
+print(f"Title in human: {w2.title_in_human}")
+print(f"Type of weapon: {w2.type_of_weapon}")
+print(f"Type of damage: {w2.type_of_damage}")
+print(f"Rarity: {w2.rarity}")
+print(f"Damage: {w2.damage}")
+# END class Weapon
