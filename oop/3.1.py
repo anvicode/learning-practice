@@ -141,3 +141,68 @@ p1.change_altitude(value=-200)
 p1.change_altitude(value=-50)
 p1.landing()
 p1.get_info()
+
+
+# Task 4
+
+
+class MusicAlbum:
+    def __init__(
+        self, artist: str, title: str, genre: str, tracklist: list[str] = []
+    ) -> None:
+        self.artist: str = artist
+        self.title: str = title
+        self.genre: str = genre
+        self.tracklist: list[str] = tracklist
+
+    def add_track(self, ind: int, track: str) -> None:
+        self.tracklist.insert(ind - 1, track)
+        print(f'Track "{track}" is added')
+
+    def del_track(self, track: str) -> None:
+        if track in self.tracklist:
+            self.tracklist.remove(track)
+            print(f'Track "{track}" is deleted')
+        else:
+            print(f'Track "{track}" does not exist')
+
+    def play_track(self, track: str) -> None:
+        if track in self.tracklist:
+            t: str = "".join([i for i in self.tracklist if i == track])
+            print(f'Track "{t}" is playing 🎶 🎶 🎶')
+        else:
+            print(f'Track "{track}" does not exist')
+
+    def get_info(self) -> None:
+        print(f"Artist: {self.artist}")
+        print(f"Title: {self.title}")
+        print(f"Genre: {self.genre}")
+        print("Track list: \n\t{}".format("\n\t".join(self.tracklist)))
+
+
+print("\nTask 4 ----------------------")
+a1: MusicAlbum = MusicAlbum(
+    artist="Pink Floyd",
+    title="The Dark Side of the Moon",
+    genre="Progressive Rock",
+    tracklist=[
+        "Speak to Me",
+        "Breathe",
+        "On the Run",
+        "Time",
+        "The Great Gig in the Sky",
+        "Money",
+        "Us and Them",
+        "Any Colour You Like",
+        "Brain Damage",
+        "Eclipse",
+    ],
+)
+a1.get_info()
+a1.add_track(ind=10, track="Comfortably Numb")
+a1.get_info()
+a1.del_track(track="Brain Damage")
+a1.get_info()
+a1.play_track(track="Time")
+a1.play_track(track="The Great Gig in the Sky")
+a1.get_info()
