@@ -54,3 +54,90 @@ b1.get_info()
 b1.get_page(page=0)
 b1.get_page(page=600)
 b1.get_page(page=601)
+
+
+# Task 3
+class PassengerPlane:
+    def __init__(
+        self, brand: str, model: str, capacity: int, altitude: int, speed: int
+    ) -> None:
+        self.brand: str = brand
+        self.model: str = model
+        self.capacity: int = capacity
+        self.altitude: int = altitude
+        self.speed: int = speed
+
+    def takeoff(self) -> None:
+        if self.altitude == 0:
+            if self.speed >= 400:
+                print(f"Plane {self.brand} {self.model} is taking off")
+            else:
+                print(
+                    f"Plane {self.brand} {self.model} has not enough speed for takeoff"
+                )
+        else:
+            print(f"Plane {self.brand} {self.model} is already in the air")
+
+    def landing(self) -> None:
+        if self.altitude > 0:
+            if self.altitude <= 50:
+                if self.speed <= 100:
+                    print(f"Plane {self.brand} {self.model} is landing")
+                    self.altitude = 0
+                    self.speed = 0
+                    print(f"Plane {self.brand} {self.model} has landed")
+                else:
+                    print(
+                        f"Plane {self.brand} {self.model} speed is too high for landing"
+                    )
+            else:
+                print(f"Plane {self.brand} {self.model} altitude is too high")
+        else:
+            print(f"Plane {self.brand} {self.model} is already on the ground")
+
+    def change_altitude(self, value: int) -> None:
+        if self.altitude + value > 0:
+            self.altitude += value
+            print(f"Altitude has changed. Current altitude {self.altitude}")
+        else:
+            print("Altitude cannot be negative")
+
+    def change_speed(self, value: int) -> None:
+        if self.speed + value > 0:
+            self.speed += value
+            print(f"Speed has changed. Current speed {self.speed}")
+        else:
+            print("Speed cannot be negative")
+
+    def get_info(self) -> None:
+        print(f"Brand: {self.brand}")
+        print(f"Model: {self.model}")
+        print(f"Capacity: {self.capacity}")
+        print(f"Altitude: {self.altitude}")
+        print(f"Speed: {self.speed}")
+
+
+print("\nTask 3 ----------------------")
+p1: PassengerPlane = PassengerPlane(
+    brand="Boeing", model="747", capacity=500, altitude=0, speed=0
+)
+p1.get_info()
+p1.takeoff()
+p1.landing()
+p1.change_speed(value=300)
+p1.change_speed(value=-10)
+p1.change_speed(value=-290)
+p1.takeoff()
+p1.change_speed(value=111)
+p1.takeoff()
+p1.change_altitude(value=100)
+p1.change_altitude(value=-100)
+p1.change_altitude(value=200)
+p1.landing()
+p1.change_speed(value=-111)
+p1.landing()
+p1.change_speed(value=-191)
+p1.change_altitude(value=-200)
+p1.change_altitude(value=-50)
+p1.landing()
+p1.get_info()
