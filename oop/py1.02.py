@@ -153,3 +153,42 @@ print(f"Type of damage: {w2.type_of_damage}")
 print(f"Rarity: {w2.rarity}")
 print(f"Damage: {w2.damage}")
 # END class Weapon
+
+
+# BEGIN class Animal
+class Animal:
+    name = "Fox"
+    size = "Small"
+    age = 1
+    is_training = False
+    biome = "Taiga"
+    variations = "Fox"
+
+
+a1 = Animal()
+
+print()
+print(f"Name: {a1.name}")
+print(f"Size: {a1.size}")
+print(f"Age: {a1.age}")
+print(f"Is training: {a1.is_training}")
+print(f"Biome: {a1.biome}")
+print(f"Variations: {a1.variations}")
+
+a2 = Animal()
+
+a2.name = "Capybara"
+a2.size = "Medium"
+a2.age = 3
+a2.is_training = False
+a2.biome = "Wetland"
+a2.variations = "Capybara"
+
+print()
+print(f"Name: {a2.name}")
+print(f"Size: {a2.size}")
+print(f"Age: {a2.age}")
+print(f"Is training: {a2.is_training}")
+print(f"Biome: {a2.biome}")
+print(f"Variations: {a2.variations}")
+# END class Animal
