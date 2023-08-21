@@ -63,6 +63,7 @@ class Dwarf:
         weight: float,
         hair_color: str,
         eye_color: str,
+        speed: float,
         health: float,
         hunger: float,
         thirst: float,
@@ -74,6 +75,7 @@ class Dwarf:
         self.weight = weight
         self.hair_color = hair_color
         self.eye_color = eye_color
+        self.speed = speed
         self.health = health
         self.hunger = hunger
         self.thirst = thirst
@@ -81,7 +83,7 @@ class Dwarf:
     def Speak(self, speech: str) -> str:
         return f"{self.name} is speaking: {speech}"
 
-    def Move(self, speed: int) -> None:
+    def Move(self, speed: float) -> None:
         self.speed = speed
         self.weight -= 0.5
         self.hunger += 1
@@ -105,7 +107,7 @@ class Dwarf:
         self.health -= damage
 
 
-Dwarf_Johnny = Dwarf("Johnny", 29, "male", 102, 85, "black", "hazel", 100, 0, 0)
+Dwarf_Johnny = Dwarf("Johnny", 29, "male", 102, 85, "black", "hazel", 0, 100, 0, 0)
 
 print(f"Dwarf: {Dwarf_Johnny.name}")
 print(f"Age: {Dwarf_Johnny.age}")
@@ -137,7 +139,7 @@ print(f"Hunger: {Dwarf_Johnny.hunger}")
 print(f"Thirst: {Dwarf_Johnny.thirst}")
 
 
-Dwarf_Stella = Dwarf("Stella", 25, "female", 90, 50, "brown", "hazel", 100, 0, 0)
+Dwarf_Stella = Dwarf("Stella", 25, "female", 90, 50, "brown", "hazel", 0, 100, 0, 0)
 
 print()
 print(f"Dwarf: {Dwarf_Stella.name}")
@@ -154,7 +156,7 @@ print(f"{Dwarf_Stella.Speak(f'Hello, {Dwarf_Johnny.name}!')}")
 
 
 """ 1.3 BEGIN """
-d2 = Dwarf("Lily", 25, "female", 90, 50, "brown", "hazel", 100, 0, 0)
+d2 = Dwarf("Lily", 25, "female", 90, 50, "brown", "hazel", 0, 100, 0, 0)
 d2.name = "Lily"
 
 print()
@@ -305,6 +307,8 @@ class Animal:
         is_training: bool,
         biome: str,
         variations: str,
+        health: float,
+        speed: float,
     ) -> None:
         self.name = name
         self.size = size
@@ -312,9 +316,20 @@ class Animal:
         self.is_training = is_training
         self.biome = biome
         self.variations = variations
+        self.health = health
+        self.speed = speed
+
+    def Move(self, speed: float) -> None:
+        self.speed += speed
+
+    def Stop(self) -> None:
+        self.speed = 0
+
+    def Receive_damage(self, damage: float) -> None:
+        self.health -= damage
 
 
-a1 = Animal("Fox", "Small", 1, False, "Taiga", "Fox")
+a1 = Animal("Fox", "Small", 1, False, "Taiga", "Fox", 100, 0)
 
 print()
 print(f"Name: {a1.name}")
@@ -323,8 +338,17 @@ print(f"Age: {a1.age}")
 print(f"Is training: {a1.is_training}")
 print(f"Biome: {a1.biome}")
 print(f"Variations: {a1.variations}")
+print(f"Health: {a1.health}")
+print(f"Speed: {a1.speed}")
 
-a2 = Animal("Capybara", "Medium", 3, True, "Wetland", "Capybara")
+a1.Move(10)
+print(f"{a1.name}'s speed now {a1.speed}")
+a1.Stop()
+print(f"{a1.name}'s speed now {a1.speed}")
+a1.Receive_damage(50)
+print(f"{a1.name}'s health now {a1.health}")
+
+a2 = Animal("Capybara", "Medium", 3, True, "Wetland", "Capybara", 100, 0)
 
 
 print()
@@ -334,4 +358,13 @@ print(f"Age: {a2.age}")
 print(f"Is training: {a2.is_training}")
 print(f"Biome: {a2.biome}")
 print(f"Variations: {a2.variations}")
+print(f"Health: {a2.health}")
+print(f"Speed: {a2.speed}")
+
+a2.Move(15)
+print(f"{a2.name}'s speed now {a2.speed}")
+a2.Stop()
+print(f"{a2.name}'s speed now {a2.speed}")
+a2.Receive_damage(20)
+print(f"{a2.name}'s health now {a2.health}")
 # END class Animal
