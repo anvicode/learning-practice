@@ -48,6 +48,8 @@ class bookmark is a template for variety of instances of bookmarks
 
 # py.1.02 -> py.1.03
 # py.1.03 -> add constructors to classes and three methods for each class
+# py.1.03 -> i need to add new class attributes based on methods
+# when designing classes: methods first
 
 
 # BEGIN class Dwarf
@@ -61,6 +63,9 @@ class Dwarf:
         weight: float,
         hair_color: str,
         eye_color: str,
+        health: float,
+        hunger: float,
+        thirst: float,
     ) -> None:
         self.name = name
         self.age = age
@@ -69,9 +74,38 @@ class Dwarf:
         self.weight = weight
         self.hair_color = hair_color
         self.eye_color = eye_color
+        self.health = health
+        self.hunger = hunger
+        self.thirst = thirst
+
+    def Speak(self, speech: str) -> str:
+        return f"{self.name} is speaking: {speech}"
+
+    def Move(self, speed: int) -> None:
+        self.speed = speed
+        self.weight -= 0.5
+        self.hunger += 1
+        self.thirst += 2
+
+    def Stop(self) -> None:
+        self.speed = 0
+
+    def Eat(self) -> None:
+        if self.health < 100:
+            self.health += 1
+        self.weight += 0.5
+        self.hunger -= 1
+
+    def Drink_water(self) -> None:
+        if self.health < 100:
+            self.health += 1
+        self.thirst -= 1
+
+    def Receive_damage(self, damage: float) -> None:
+        self.health -= damage
 
 
-Dwarf_Johnny = Dwarf("Johnny", 29, "male", 102, 85, "black", "hazel")
+Dwarf_Johnny = Dwarf("Johnny", 29, "male", 102, 85, "black", "hazel", 100, 0, 0)
 
 print(f"Dwarf: {Dwarf_Johnny.name}")
 print(f"Age: {Dwarf_Johnny.age}")
@@ -80,8 +114,30 @@ print(f"Height: {Dwarf_Johnny.height}")
 print(f"Weight: {Dwarf_Johnny.weight}")
 print(f"Hair color: {Dwarf_Johnny.hair_color}")
 print(f"Eye color: {Dwarf_Johnny.eye_color}")
+print(f"Health: {Dwarf_Johnny.health}")
+print(f"Hunger: {Dwarf_Johnny.hunger}")
+print(f"Thirst: {Dwarf_Johnny.thirst}")
+print(f"{Dwarf_Johnny.Speak('Hello')}")
 
-Dwarf_Stella = Dwarf("Stella", 25, "female", 90, 50, "brown", "hazel")
+Dwarf_Johnny.Move(100)
+print(f"{Dwarf_Johnny.name}'s state has changed:")
+print(f"Speed: {Dwarf_Johnny.speed}")
+print(f"Weight: {Dwarf_Johnny.weight}")
+print(f"Hunger: {Dwarf_Johnny.hunger}")
+print(f"Thirst: {Dwarf_Johnny.thirst}")
+Dwarf_Johnny.Stop()
+Dwarf_Johnny.Receive_damage(10)
+print(f"{Dwarf_Johnny.name}'s state has changed:")
+print(f"Speed: {Dwarf_Johnny.speed}")
+Dwarf_Johnny.Eat()
+Dwarf_Johnny.Drink_water()
+print(f"{Dwarf_Johnny.name}'s state has changed:")
+print(f"Health: {Dwarf_Johnny.health}")
+print(f"Hunger: {Dwarf_Johnny.hunger}")
+print(f"Thirst: {Dwarf_Johnny.thirst}")
+
+
+Dwarf_Stella = Dwarf("Stella", 25, "female", 90, 50, "brown", "hazel", 100, 0, 0)
 
 print()
 print(f"Dwarf: {Dwarf_Stella.name}")
@@ -91,10 +147,14 @@ print(f"Height: {Dwarf_Stella.height}")
 print(f"Weight: {Dwarf_Stella.weight}")
 print(f"Hair color: {Dwarf_Stella.hair_color}")
 print(f"Eye color: {Dwarf_Stella.eye_color}")
+print(f"Health: {Dwarf_Stella.health}")
+print(f"Hunger: {Dwarf_Stella.hunger}")
+print(f"Thirst: {Dwarf_Stella.thirst}")
+print(f"{Dwarf_Stella.Speak(f'Hello, {Dwarf_Johnny.name}!')}")
 
 
 """ 1.3 BEGIN """
-d2 = Dwarf("Lily", 25, "female", 90, 50, "brown", "hazel")
+d2 = Dwarf("Lily", 25, "female", 90, 50, "brown", "hazel", 100, 0, 0)
 d2.name = "Lily"
 
 print()
