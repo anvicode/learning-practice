@@ -46,18 +46,32 @@ class bookmark is a template for variety of instances of bookmarks
 """ 1.2 """
 
 
+# py.1.02 -> py.1.03
+# py.1.03 -> add constructors to classes and three methods for each class
+
+
 # BEGIN class Dwarf
 class Dwarf:
-    name = "Johnny"
-    age = 29
-    gender = "male"
-    height = 102
-    weight = 85
-    hair_color = "black"
-    eye_color = "hazel"
+    def __init__(
+        self,
+        name: str,
+        age: int,
+        gender: str,
+        height: float,
+        weight: float,
+        hair_color: str,
+        eye_color: str,
+    ) -> None:
+        self.name = name
+        self.age = age
+        self.gender = gender
+        self.height = height
+        self.weight = weight
+        self.hair_color = hair_color
+        self.eye_color = eye_color
 
 
-Dwarf_Johnny = Dwarf()
+Dwarf_Johnny = Dwarf("Johnny", 29, "male", 102, 85, "black", "hazel")
 
 print(f"Dwarf: {Dwarf_Johnny.name}")
 print(f"Age: {Dwarf_Johnny.age}")
@@ -67,15 +81,7 @@ print(f"Weight: {Dwarf_Johnny.weight}")
 print(f"Hair color: {Dwarf_Johnny.hair_color}")
 print(f"Eye color: {Dwarf_Johnny.eye_color}")
 
-Dwarf_Stella = Dwarf()
-
-Dwarf_Stella.name = "Stella"
-Dwarf_Stella.age = 25
-Dwarf_Stella.gender = "female"
-Dwarf_Stella.height = 90
-Dwarf_Stella.weight = 50
-Dwarf_Stella.hair_color = "brown"
-Dwarf_Stella.eye_color = "hazel"
+Dwarf_Stella = Dwarf("Stella", 25, "female", 90, 50, "brown", "hazel")
 
 print()
 print(f"Dwarf: {Dwarf_Stella.name}")
@@ -88,7 +94,7 @@ print(f"Eye color: {Dwarf_Stella.eye_color}")
 
 
 """ 1.3 BEGIN """
-d2 = Dwarf()
+d2 = Dwarf("Lily", 25, "female", 90, 50, "brown", "hazel")
 d2.name = "Lily"
 
 print()
@@ -106,18 +112,40 @@ print(d3.name)  # Hope
 
 # BEGIN class Weapon
 class Weapon:
-    title = "Morningstar"
-    title_in_dwarven = "sanád-vîr"
-    title_in_elvish = "rifa-ila"
-    title_in_goblin = "smungras-ex"
-    title_in_human = "sabu-ama"
-    type_of_weapon = "Edged"
-    type_of_damage = "Piercing"
-    rarity = "Common"
-    damage = 11
+    def __init__(
+        self,
+        title: str,
+        title_in_dwarven: str,
+        title_in_elvish: str,
+        title_in_goblin: str,
+        title_in_human: str,
+        type_of_weapon: str,
+        type_of_damage: str,
+        rarity: str,
+        damage: float,
+    ) -> None:
+        self.title = title
+        self.title_in_dwarven = title_in_dwarven
+        self.title_in_elvish = title_in_elvish
+        self.title_in_goblin = title_in_goblin
+        self.title_in_human = title_in_human
+        self.type_of_weapon = type_of_weapon
+        self.type_of_damage = type_of_damage
+        self.rarity = rarity
+        self.damage = damage
 
 
-w1 = Weapon()
+w1 = Weapon(
+    "Morningstar",
+    "sanád-vîr",
+    "rifa-ila",
+    "smungras-ex",
+    "sabu-ama",
+    "Edged",
+    "Piercing",
+    "Rare",
+    11,
+)
 
 print()
 print(f"Title: {w1.title}")
@@ -130,17 +158,10 @@ print(f"Type of damage: {w1.type_of_damage}")
 print(f"Rarity: {w1.rarity}")
 print(f"Damage: {w1.damage}")
 
-w2 = Weapon()
+w2 = Weapon(
+    "Scourge", "abshoth", "fétha", "song", "etuk", "Edged", "Slashing", "Rare", 15
+)
 
-w2.title = "Scourge"
-w2.title_in_dwarven = "abshoth"
-w2.title_in_elvish = "fétha"
-w2.title_in_goblin = "song"
-w2.title_in_human = "etuk"
-w2.type_of_weapon = "Edged"
-w2.type_of_damage = "Slashing"
-w2.rarity = "Rare"
-w2.damage = 15
 
 print()
 print(f"Title: {w2.title}")
@@ -157,15 +178,24 @@ print(f"Damage: {w2.damage}")
 
 # BEGIN class Animal
 class Animal:
-    name = "Fox"
-    size = "Small"
-    age = 1
-    is_training = False
-    biome = "Taiga"
-    variations = "Fox"
+    def __init__(
+        self,
+        name: str,
+        size: str,
+        age: int,
+        is_training: bool,
+        biome: str,
+        variations: str,
+    ) -> None:
+        self.name = name
+        self.size = size
+        self.age = age
+        self.is_training = is_training
+        self.biome = biome
+        self.variations = variations
 
 
-a1 = Animal()
+a1 = Animal("Fox", "Small", 1, False, "Taiga", "Fox")
 
 print()
 print(f"Name: {a1.name}")
@@ -175,14 +205,8 @@ print(f"Is training: {a1.is_training}")
 print(f"Biome: {a1.biome}")
 print(f"Variations: {a1.variations}")
 
-a2 = Animal()
+a2 = Animal("Capybara", "Medium", 3, True, "Wetland", "Capybara")
 
-a2.name = "Capybara"
-a2.size = "Medium"
-a2.age = 3
-a2.is_training = False
-a2.biome = "Wetland"
-a2.variations = "Capybara"
 
 print()
 print(f"Name: {a2.name}")
