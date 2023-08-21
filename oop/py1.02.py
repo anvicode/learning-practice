@@ -183,6 +183,9 @@ class Weapon:
         type_of_damage: str,
         rarity: str,
         damage: float,
+        sharpening: float,
+        enchantment: float,
+        encrustment: str = "None",
     ) -> None:
         self.title = title
         self.title_in_dwarven = title_in_dwarven
@@ -193,6 +196,20 @@ class Weapon:
         self.type_of_damage = type_of_damage
         self.rarity = rarity
         self.damage = damage
+        self.sharpening = sharpening
+        self.enchantment = enchantment
+        self.encrustment = encrustment
+
+    def Sharpen(self, value: float) -> None:
+        self.sharpening += value
+        self.damage += value / 2
+
+    def Enchant(self, value: float) -> None:
+        self.enchantment += value
+        self.damage += value / 2
+
+    def Encrust(self, value: str) -> None:
+        self.encrustment = value
 
 
 w1 = Weapon(
@@ -205,6 +222,8 @@ w1 = Weapon(
     "Piercing",
     "Rare",
     11,
+    0,
+    0,
 )
 
 print()
@@ -217,9 +236,30 @@ print(f"Type of weapon: {w1.type_of_weapon}")
 print(f"Type of damage: {w1.type_of_damage}")
 print(f"Rarity: {w1.rarity}")
 print(f"Damage: {w1.damage}")
+print(f"Sharpening: {w1.sharpening}")
+print(f"Enchantment: {w1.enchantment}")
+print(f"Encrustment: {w1.encrustment}")
+
+w1.Sharpen(1)
+
+print(f"{w1.title} has been sharpened.")
+print(f"Sharpening is now: {w1.sharpening}")
+print(f"Damage is now: {w1.damage}")
+
+w1.Enchant(1)
+
+print(f"{w1.title} has been enchanted.")
+print(f"Enchantment is now: {w1.enchantment}")
+print(f"Damage is now: {w1.damage}")
+
+w1.Encrust("Azure Stone of Power")
+
+print(f"{w1.title} has been encrusted.")
+print(f"Encrustment is now: {w1.encrustment}")
+
 
 w2 = Weapon(
-    "Scourge", "abshoth", "fétha", "song", "etuk", "Edged", "Slashing", "Rare", 15
+    "Scourge", "abshoth", "fétha", "song", "etuk", "Edged", "Slashing", "Rare", 15, 0, 0
 )
 
 
@@ -233,6 +273,25 @@ print(f"Type of weapon: {w2.type_of_weapon}")
 print(f"Type of damage: {w2.type_of_damage}")
 print(f"Rarity: {w2.rarity}")
 print(f"Damage: {w2.damage}")
+print(f"Sharpening: {w2.sharpening}")
+print(f"Enchantment: {w2.enchantment}")
+print(f"Encrustment: {w2.encrustment}")
+
+w2.Sharpen(10)
+
+print(f"{w2.title} has been sharpened.")
+print(f"Sharpening is now: {w2.sharpening}")
+print(f"Damage is now: {w2.damage}")
+
+w2.Enchant(5)
+
+print(f"{w2.title} has been enchanted.")
+print(f"Enchantment is now: {w2.enchantment}")
+print(f"Damage is now: {w2.damage}")
+
+w2.Encrust("Emerald Tear of Crocodile")
+print(f"{w2.title} has been encrusted.")
+print(f"Encrustment is now: {w2.encrustment}")
 # END class Weapon
 
 
