@@ -260,29 +260,104 @@ class Weapon:
         enchantment: float,
         encrustment: str = "None",
     ) -> None:
-        self.title = title
-        self.title_in_dwarven = title_in_dwarven
-        self.title_in_elvish = title_in_elvish
-        self.title_in_goblin = title_in_goblin
-        self.title_in_human = title_in_human
-        self.type_of_weapon = type_of_weapon
-        self.type_of_damage = type_of_damage
-        self.rarity = rarity
-        self.damage = damage
-        self.sharpening = sharpening
-        self.enchantment = enchantment
-        self.encrustment = encrustment
+        self.__title = title
+        self.__title_in_dwarven = title_in_dwarven
+        self.__title_in_elvish = title_in_elvish
+        self.__title_in_goblin = title_in_goblin
+        self.__title_in_human = title_in_human
+        self.__type_of_weapon = type_of_weapon
+        self.__type_of_damage = type_of_damage
+        self.__rarity = rarity
+        self.__damage = damage
+        self.__sharpening = sharpening
+        self.__enchantment = enchantment
+        self.__encrustment = encrustment
+
+    # BEGIN getter/setter
+    def get_title(self) -> str:
+        return self.__title
+
+    def set_title(self, title: str) -> None:
+        self.__title = title
+
+    def get_title_in_dwarven(self) -> str:
+        return self.__title_in_dwarven
+
+    def set_title_in_dwarven(self, title_in_dwarven: str) -> None:
+        self.__title_in_dwarven = title_in_dwarven
+
+    def get_title_in_elvish(self) -> str:
+        return self.__title_in_elvish
+
+    def set_title_in_elvish(self, title_in_elvish: str) -> None:
+        self.__title_in_elvish = title_in_elvish
+
+    def get_title_in_goblin(self) -> str:
+        return self.__title_in_goblin
+
+    def set_title_in_goblin(self, title_in_goblin: str) -> None:
+        self.__title_in_goblin = title_in_goblin
+
+    def get_title_in_human(self) -> str:
+        return self.__title_in_human
+
+    def set_title_in_human(self, title_in_human: str) -> None:
+        self.__title_in_human = title_in_human
+
+    def get_type_of_weapon(self) -> str:
+        return self.__type_of_weapon
+
+    def set_type_of_weapon(self, type_of_weapon: str) -> None:
+        self.__type_of_weapon = type_of_weapon
+
+    def get_type_of_damage(self) -> str:
+        return self.__type_of_damage
+
+    def set_type_of_damage(self, type_of_damage: str) -> None:
+        self.__type_of_damage = type_of_damage
+
+    def get_rarity(self) -> str:
+        return self.__rarity
+
+    def set_rarity(self, rarity: str) -> None:
+        self.__rarity = rarity
+
+    def get_damage(self) -> float:
+        return self.__damage
+
+    def set_damage(self, damage: float) -> None:
+        self.__damage = damage
+
+    def get_sharpening(self) -> float:
+        return self.__sharpening
+
+    def set_sharpening(self, sharpening: float) -> None:
+        self.__sharpening = sharpening
+
+    def get_enchantment(self) -> float:
+        return self.__enchantment
+
+    def set_enchantment(self, enchantment: float) -> None:
+        self.__enchantment = enchantment
+
+    def get_encrustment(self) -> str:
+        return self.__encrustment
+
+    def set_encrustment(self, encrustment: str) -> None:
+        self.__encrustment = encrustment
+
+    # END getter/setter
 
     def Sharpen(self, value: float) -> None:
-        self.sharpening += value
-        self.damage += value / 2
+        self.__sharpening += value
+        self.__damage += value / 2
 
     def Enchant(self, value: float) -> None:
-        self.enchantment += value
-        self.damage += value / 2
+        self.__enchantment += value
+        self.__damage += value / 2
 
     def Encrust(self, value: str) -> None:
-        self.encrustment = value
+        self.__encrustment = value
 
 
 w1 = Weapon(
@@ -300,35 +375,35 @@ w1 = Weapon(
 )
 
 print()
-print(f"Title: {w1.title}")
-print(f"Title in dwarven: {w1.title_in_dwarven}")
-print(f"Title in elvish: {w1.title_in_elvish}")
-print(f"Title in goblin: {w1.title_in_goblin}")
-print(f"Title in human: {w1.title_in_human}")
-print(f"Type of weapon: {w1.type_of_weapon}")
-print(f"Type of damage: {w1.type_of_damage}")
-print(f"Rarity: {w1.rarity}")
-print(f"Damage: {w1.damage}")
-print(f"Sharpening: {w1.sharpening}")
-print(f"Enchantment: {w1.enchantment}")
-print(f"Encrustment: {w1.encrustment}")
+print(f"Title: {w1.get_title()}")
+print(f"Title in dwarven: {w1.get_title_in_dwarven()}")
+print(f"Title in elvish: {w1.get_title_in_elvish()}")
+print(f"Title in goblin: {w1.get_title_in_goblin()}")
+print(f"Title in human: {w1.get_title_in_human()}")
+print(f"Type of weapon: {w1.get_type_of_weapon()}")
+print(f"Type of damage: {w1.get_type_of_damage()}")
+print(f"Rarity: {w1.get_rarity()}")
+print(f"Damage: {w1.get_damage()}")
+print(f"Sharpening: {w1.get_sharpening()}")
+print(f"Enchantment: {w1.get_enchantment()}")
+print(f"Encrustment: {w1.get_encrustment()}")
 
 w1.Sharpen(1)
 
-print(f"{w1.title} has been sharpened.")
-print(f"Sharpening is now: {w1.sharpening}")
-print(f"Damage is now: {w1.damage}")
+print(f"{w1.get_title()} has been sharpened.")
+print(f"Sharpening is now: {w1.get_sharpening()}")
+print(f"Damage is now: {w1.get_damage()}")
 
 w1.Enchant(1)
 
-print(f"{w1.title} has been enchanted.")
-print(f"Enchantment is now: {w1.enchantment}")
-print(f"Damage is now: {w1.damage}")
+print(f"{w1.get_title()} has been enchanted.")
+print(f"Enchantment is now: {w1.get_enchantment()}")
+print(f"Damage is now: {w1.get_damage()}")
 
 w1.Encrust("Azure Stone of Power")
 
-print(f"{w1.title} has been encrusted.")
-print(f"Encrustment is now: {w1.encrustment}")
+print(f"{w1.get_title()} has been encrusted.")
+print(f"Encrustment is now: {w1.get_encrustment()}")
 
 
 w2 = Weapon(
@@ -337,34 +412,34 @@ w2 = Weapon(
 
 
 print()
-print(f"Title: {w2.title}")
-print(f"Title in dwarven: {w2.title_in_dwarven}")
-print(f"Title in elvish: {w2.title_in_elvish}")
-print(f"Title in goblin: {w2.title_in_goblin}")
-print(f"Title in human: {w2.title_in_human}")
-print(f"Type of weapon: {w2.type_of_weapon}")
-print(f"Type of damage: {w2.type_of_damage}")
-print(f"Rarity: {w2.rarity}")
-print(f"Damage: {w2.damage}")
-print(f"Sharpening: {w2.sharpening}")
-print(f"Enchantment: {w2.enchantment}")
-print(f"Encrustment: {w2.encrustment}")
+print(f"Title: {w2.get_title()}")
+print(f"Title in dwarven: {w2.get_title_in_dwarven()}")
+print(f"Title in elvish: {w2.get_title_in_elvish()}")
+print(f"Title in goblin: {w2.get_title_in_goblin()}")
+print(f"Title in human: {w2.get_title_in_human()}")
+print(f"Type of weapon: {w2.get_type_of_weapon()}")
+print(f"Type of damage: {w2.get_type_of_damage()}")
+print(f"Rarity: {w2.get_rarity()}")
+print(f"Damage: {w2.get_damage()}")
+print(f"Sharpening: {w2.get_sharpening()}")
+print(f"Enchantment: {w2.get_enchantment()}")
+print(f"Encrustment: {w2.get_encrustment()}")
 
 w2.Sharpen(10)
 
-print(f"{w2.title} has been sharpened.")
-print(f"Sharpening is now: {w2.sharpening}")
-print(f"Damage is now: {w2.damage}")
+print(f"{w2.get_title()} has been sharpened.")
+print(f"Sharpening is now: {w2.get_sharpening()}")
+print(f"Damage is now: {w2.get_damage()}")
 
 w2.Enchant(5)
 
-print(f"{w2.title} has been enchanted.")
-print(f"Enchantment is now: {w2.enchantment}")
-print(f"Damage is now: {w2.damage}")
+print(f"{w2.get_title()} has been enchanted.")
+print(f"Enchantment is now: {w2.get_enchantment()}")
+print(f"Damage is now: {w2.get_damage()}")
 
 w2.Encrust("Emerald Tear of Crocodile")
-print(f"{w2.title} has been encrusted.")
-print(f"Encrustment is now: {w2.encrustment}")
+print(f"{w2.get_title()} has been encrusted.")
+print(f"Encrustment is now: {w2.get_encrustment()}")
 # END class Weapon
 
 
