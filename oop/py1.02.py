@@ -564,3 +564,196 @@ print(f"{a2.get_name()}'s speed now {a2.get_speed()}")
 a2.Receive_damage(20)
 print(f"{a2.get_name()}'s health now {a2.get_health()}")
 # END class Animal
+
+
+# py.1.03 -> py.1.04
+
+
+class Fish:
+    def __init__(
+        self, length: float, weight: float, speed: float, water_type: str
+    ) -> None:
+        self._length = length  # m
+        self._weight = weight  # kg
+        self._speed = speed  # km/h
+        self._water_type = water_type  # fresh or salt
+
+    # BEGIN getter/setter
+    def get_length(self) -> float:
+        return self._length
+
+    def set_length(self, length: float) -> None:
+        self._length = length
+
+    def get_weight(self) -> float:
+        return self._weight
+
+    def set_weight(self, weight: float) -> None:
+        self._weight = weight
+
+    def get_speed(self) -> float:
+        return self._speed
+
+    def set_speed(self, speed: float) -> None:
+        self._speed = speed
+
+    def get_water_type(self) -> str:
+        return self._water_type
+
+    def set_water_type(self, water_type: str) -> None:
+        self._water_type = water_type
+
+    # END getter/setter
+
+    def swim(self, speed: float) -> None:
+        self._speed = speed
+
+    def stop_swim(self) -> None:
+        self._speed = 0
+
+
+class Shark(Fish):
+    def __init__(
+        self,
+        length: float,  # m
+        weight: float,  # kg
+        speed: float,  # km/h
+        water_type: str,  # freshwater or saltwater
+        is_hunting: bool,  # True or False
+        type_of_shark: str,
+    ) -> None:
+        super().__init__(length, weight, speed, water_type)
+        self._is_hunting = is_hunting
+        self._type_of_shark = type_of_shark
+
+    # BEGIN getter/setter
+    def get_is_hunting(self) -> bool:
+        return self._is_hunting
+
+    def set_is_hunting(self, is_hunting: bool) -> None:
+        self._is_hunting = is_hunting
+
+    def get_type_of_shark(self) -> str:
+        return self._type_of_shark
+
+    def set_type_of_shark(self, type_of_shark: str) -> None:
+        self._type_of_shark = type_of_shark
+
+    # END getter/setter
+
+    def hunt(self) -> None:
+        self._is_hunting = True
+        self._speed = 19
+
+    def stop_hunting(self) -> None:
+        self._is_hunting = False
+
+    def ambush(self) -> None:
+        if self._is_hunting:
+            self._speed = 25
+        else:
+            self._is_hunting = True
+            self._speed = 25
+
+
+sh1 = Shark(4, 450, 10, "saltwater", False, "Tiger shark")
+print()
+print(f"Length: {sh1.get_length()}")
+print(f"Weight: {sh1.get_weight()}")
+print(f"Speed: {sh1.get_speed()}")
+print(f"Water type: {sh1.get_water_type()}")
+print(f"Is hunting: {sh1.get_is_hunting()}")
+print(f"Type of shark: {sh1.get_type_of_shark()}")
+
+sh1.swim(10)
+print(f"Speed is {sh1.get_speed()}")
+sh1.stop_swim()
+print(f"Speed is {sh1.get_speed()}")
+
+sh1.hunt()
+print(f"{sh1.get_type_of_shark()} is now hunting")
+print(f"Is hunting: {sh1.get_is_hunting()}")
+print(f"Speed: {sh1.get_speed()}")
+
+sh1.ambush()
+print(f"{sh1.get_type_of_shark()} is in ambush")
+print(f"Is hunting: {sh1.get_is_hunting()}")
+print(f"Speed: {sh1.get_speed()}")
+
+sh1.stop_hunting()
+print(f"{sh1.get_type_of_shark()} is no longer hunting")
+print(f"Is hunting: {sh1.get_is_hunting()}")
+
+
+class Carp(Fish):
+    def __init__(
+        self,
+        length: float,  # m
+        weight: float,  # kg
+        speed: float,  # km/h
+        water_type: str,  # freshwater or saltwater
+        type_of_carp: str,
+        is_searching_for_food: bool = False,
+        is_searching_for_predator: bool = True,
+    ) -> None:
+        super().__init__(length, weight, speed, water_type)
+        self._type_of_carp = type_of_carp
+        self._is_searching_for_food = is_searching_for_food
+        self._is_searching_for_predator = is_searching_for_predator
+
+    # BEGIN getter/setter
+    def get_type_of_carp(self) -> str:
+        return self._type_of_carp
+
+    def set_type_of_carp(self, type_of_carp: str) -> None:
+        self._type_of_carp = type_of_carp
+
+    def get_is_searching_for_food(self) -> bool:
+        return self._is_searching_for_food
+
+    def set_is_searching_for_food(self, is_searching_for_food: bool) -> None:
+        self._is_searching_for_food = is_searching_for_food
+
+    def get_is_searching_for_predator(self) -> bool:
+        return self._is_searching_for_predator
+
+    def set_is_searching_for_predator(self, is_searching_for_predator: bool) -> None:
+        self._is_searching_for_predator = is_searching_for_predator
+
+    # END getter/setter
+
+    def searching_for_seaweed(self) -> None:
+        if self._is_searching_for_predator:
+            self._is_searching_for_predator = False
+            self._is_searching_for_food = True
+
+    def searching_for_predator(self) -> None:
+        if self._is_searching_for_food:
+            self._is_searching_for_food = False
+            self._is_searching_for_predator = True
+
+
+c1 = Carp(0.5, 5, 6, "freshwater", "Common Carp")
+print()
+print(f"Length: {c1.get_length()}")
+print(f"Weight: {c1.get_weight()}")
+print(f"Speed: {c1.get_speed()}")
+print(f"Water type: {c1.get_water_type()}")
+print(f"Type of carp: {c1.get_type_of_carp()}")
+print(f"Is searching for food: {c1.get_is_searching_for_food()}")
+print(f"Is searching for predator: {c1.get_is_searching_for_predator()}")
+
+c1.stop_swim()
+print(f"Speed is {c1.get_speed()}")
+c1.swim(4)
+print(f"Speed is {c1.get_speed()}")
+
+c1.searching_for_seaweed()
+print(f"{c1.get_type_of_carp()} is now searching for seaweed")
+print(f"Is searching for food: {c1.get_is_searching_for_food()}")
+print(f"Is searching for predator: {c1.get_is_searching_for_predator()}")
+
+c1.searching_for_predator()
+print(f"{c1.get_type_of_carp()} is now searching for predator")
+print(f"Is searching for food: {c1.get_is_searching_for_food()}")
+print(f"Is searching for predator: {c1.get_is_searching_for_predator()}")
