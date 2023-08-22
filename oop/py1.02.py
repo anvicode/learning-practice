@@ -68,106 +68,177 @@ class Dwarf:
         hunger: float,
         thirst: float,
     ) -> None:
-        self.name = name
-        self.age = age
-        self.gender = gender
-        self.height = height
-        self.weight = weight
-        self.hair_color = hair_color
-        self.eye_color = eye_color
-        self.speed = speed
-        self.health = health
-        self.hunger = hunger
-        self.thirst = thirst
+        self.__name = name
+        self.__age = age
+        self.__gender = gender
+        self.__height = height
+        self.__weight = weight
+        self.__hair_color = hair_color
+        self.__eye_color = eye_color
+        self.__speed = speed
+        self.__health = health
+        self.__hunger = hunger
+        self.__thirst = thirst
+
+    # BEGIN getter/setter
+    def get_name(self) -> str:
+        return self.__name
+
+    def set_name(self, name: str) -> None:
+        self.__name = name
+
+    def get_age(self) -> int:
+        return self.__age
+
+    def set_age(self, age: int) -> None:
+        self.__age = age
+
+    def get_gender(self) -> str:
+        return self.__gender
+
+    def set_gender(self, gender: str) -> None:
+        self.__gender = gender
+
+    def get_height(self) -> float:
+        return self.__height
+
+    def set_height(self, height: float) -> None:
+        self.__height = height
+
+    def get_weight(self) -> float:
+        return self.__weight
+
+    def set_weight(self, weight: float) -> None:
+        self.__weight = weight
+
+    def get_hair_color(self) -> str:
+        return self.__hair_color
+
+    def set_hair_color(self, hair_color: str) -> None:
+        self.__hair_color = hair_color
+
+    def get_eye_color(self) -> str:
+        return self.__eye_color
+
+    def set_eye_color(self, eye_color: str) -> None:
+        self.__eye_color = eye_color
+
+    def get_speed(self) -> float:
+        return self.__speed
+
+    def set_speed(self, speed: float) -> None:
+        self.__speed = speed
+
+    def get_health(self) -> float:
+        return self.__health
+
+    def set_health(self, health: float) -> None:
+        self.__health = health
+
+    def get_hunger(self) -> float:
+        return self.__hunger
+
+    def set_hunger(self, hunger: float) -> None:
+        self.__hunger = hunger
+
+    def get_thirst(self) -> float:
+        return self.__thirst
+
+    def set_thirst(self, thirst: float) -> None:
+        self.__thirst = thirst
+
+    # END getter/setter
 
     def Speak(self, speech: str) -> str:
-        return f"{self.name} is speaking: {speech}"
+        return f"{self.get_name()} is speaking: {speech}"
 
     def Move(self, speed: float) -> None:
-        self.speed = speed
-        self.weight -= 0.5
-        self.hunger += 1
-        self.thirst += 2
+        self.__speed = speed
+        self.__weight -= 0.5
+        self.__hunger += 1
+        self.__thirst += 2
 
     def Stop(self) -> None:
-        self.speed = 0
+        self.__speed = 0
 
     def Eat(self) -> None:
-        if self.health < 100:
-            self.health += 1
-        self.weight += 0.5
-        self.hunger -= 1
+        if self.__health < 100:
+            self.__health += 1
+        self.__weight += 0.5
+        self.__hunger -= 1
 
     def Drink_water(self) -> None:
-        if self.health < 100:
-            self.health += 1
-        self.thirst -= 1
+        if self.__health < 100:
+            self.__health += 1
+        self.__thirst -= 1
 
     def Receive_damage(self, damage: float) -> None:
-        self.health -= damage
+        self.__health -= damage
 
 
 Dwarf_Johnny = Dwarf("Johnny", 29, "male", 102, 85, "black", "hazel", 0, 100, 0, 0)
 
-print(f"Dwarf: {Dwarf_Johnny.name}")
-print(f"Age: {Dwarf_Johnny.age}")
-print(f"Gender: {Dwarf_Johnny.gender}")
-print(f"Height: {Dwarf_Johnny.height}")
-print(f"Weight: {Dwarf_Johnny.weight}")
-print(f"Hair color: {Dwarf_Johnny.hair_color}")
-print(f"Eye color: {Dwarf_Johnny.eye_color}")
-print(f"Health: {Dwarf_Johnny.health}")
-print(f"Hunger: {Dwarf_Johnny.hunger}")
-print(f"Thirst: {Dwarf_Johnny.thirst}")
+print(f"Dwarf: {Dwarf_Johnny.get_name()}")
+print(f"Age: {Dwarf_Johnny.get_age()}")
+print(f"Gender: {Dwarf_Johnny.get_gender()}")
+print(f"Height: {Dwarf_Johnny.get_height()}")
+print(f"Weight: {Dwarf_Johnny.get_weight()}")
+print(f"Hair color: {Dwarf_Johnny.get_hair_color()}")
+print(f"Eye color: {Dwarf_Johnny.get_eye_color()}")
+print(f"Health: {Dwarf_Johnny.get_health()}")
+print(f"Hunger: {Dwarf_Johnny.get_hunger()}")
+print(f"Thirst: {Dwarf_Johnny.get_thirst()}")
 print(f"{Dwarf_Johnny.Speak('Hello')}")
 
 Dwarf_Johnny.Move(100)
-print(f"{Dwarf_Johnny.name}'s state has changed:")
-print(f"Speed: {Dwarf_Johnny.speed}")
-print(f"Weight: {Dwarf_Johnny.weight}")
-print(f"Hunger: {Dwarf_Johnny.hunger}")
-print(f"Thirst: {Dwarf_Johnny.thirst}")
+print(f"{Dwarf_Johnny.get_name()}'s state has changed:")
+print(f"Speed: {Dwarf_Johnny.get_speed()}")
+print(f"Weight: {Dwarf_Johnny.get_weight()}")
+print(f"Hunger: {Dwarf_Johnny.get_hunger()}")
+print(f"Thirst: {Dwarf_Johnny.get_thirst()}")
 Dwarf_Johnny.Stop()
 Dwarf_Johnny.Receive_damage(10)
-print(f"{Dwarf_Johnny.name}'s state has changed:")
-print(f"Speed: {Dwarf_Johnny.speed}")
+print(f"{Dwarf_Johnny.get_name()}'s state has changed:")
+print(f"Speed: {Dwarf_Johnny.get_speed()}")
 Dwarf_Johnny.Eat()
 Dwarf_Johnny.Drink_water()
-print(f"{Dwarf_Johnny.name}'s state has changed:")
-print(f"Health: {Dwarf_Johnny.health}")
-print(f"Hunger: {Dwarf_Johnny.hunger}")
-print(f"Thirst: {Dwarf_Johnny.thirst}")
+print(f"{Dwarf_Johnny.get_name()}'s state has changed:")
+print(f"Health: {Dwarf_Johnny.get_health()}")
+print(f"Hunger: {Dwarf_Johnny.get_hunger()}")
+print(f"Thirst: {Dwarf_Johnny.get_thirst()}")
 
 
 Dwarf_Stella = Dwarf("Stella", 25, "female", 90, 50, "brown", "hazel", 0, 100, 0, 0)
 
 print()
-print(f"Dwarf: {Dwarf_Stella.name}")
-print(f"Age: {Dwarf_Stella.age}")
-print(f"Gender: {Dwarf_Stella.gender}")
-print(f"Height: {Dwarf_Stella.height}")
-print(f"Weight: {Dwarf_Stella.weight}")
-print(f"Hair color: {Dwarf_Stella.hair_color}")
-print(f"Eye color: {Dwarf_Stella.eye_color}")
-print(f"Health: {Dwarf_Stella.health}")
-print(f"Hunger: {Dwarf_Stella.hunger}")
-print(f"Thirst: {Dwarf_Stella.thirst}")
-print(f"{Dwarf_Stella.Speak(f'Hello, {Dwarf_Johnny.name}!')}")
+print(f"Dwarf: {Dwarf_Stella.get_name()}")
+print(f"Age: {Dwarf_Stella.get_age()}")
+print(f"Gender: {Dwarf_Stella.get_gender()}")
+print(f"Height: {Dwarf_Stella.get_height()}")
+print(f"Weight: {Dwarf_Stella.get_weight()}")
+print(f"Hair color: {Dwarf_Stella.get_hair_color()}")
+print(f"Eye color: {Dwarf_Stella.get_eye_color()}")
+print(f"Health: {Dwarf_Stella.get_health()}")
+print(f"Hunger: {Dwarf_Stella.get_hunger()}")
+print(f"Thirst: {Dwarf_Stella.get_thirst()}")
+print(f"{Dwarf_Stella.Speak(f'Hello, {Dwarf_Johnny.get_name()}!')}")
 
 
 """ 1.3 BEGIN """
 d2 = Dwarf("Lily", 25, "female", 90, 50, "brown", "hazel", 0, 100, 0, 0)
-d2.name = "Lily"
+# d2.name = "Lily"
+d2.set_name("Lily")
 
 print()
-print(d2.name)  # d2.name = "Lily"
+print(d2.get_name())  # d2.name = "Lily"
 
 d3 = d2  # assign d2 to d3
 
-d3.name = "Hope"  # change d3.name to "Hope"
+# d3.name = "Hope"  # change d3.name to "Hope"
+d3.set_name("Hope")  # change d3.name to "Hope"
 
-print(d2.name)  # must be "Lily", but it is "Hope"
-print(d3.name)  # Hope
+print(d2.get_name())  # must be "Lily", but it is "Hope"
+print(d3.get_name())  # Hope
 """ 1.3 END """
 # END class Dwarf
 
