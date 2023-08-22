@@ -456,61 +456,111 @@ class Animal:
         health: float,
         speed: float,
     ) -> None:
-        self.name = name
-        self.size = size
-        self.age = age
-        self.is_training = is_training
-        self.biome = biome
-        self.variations = variations
-        self.health = health
-        self.speed = speed
+        self.__name = name
+        self.__size = size
+        self.__age = age
+        self.__is_training = is_training
+        self.__biome = biome
+        self.__variations = variations
+        self.__health = health
+        self.__speed = speed
 
+    # BEGIN getter/setter
+    def get_name(self) -> str:
+        return self.__name
+
+    def set_name(self, name: str) -> None:
+        self.__name = name
+
+    def get_size(self) -> str:
+        return self.__size
+
+    def set_size(self, size: str) -> None:
+        self.__size = size
+
+    def get_age(self) -> int:
+        return self.__age
+
+    def set_age(self, age: int) -> None:
+        self.__age = age
+
+    def get_is_training(self) -> bool:
+        return self.__is_training
+
+    def set_is_training(self, is_training: bool) -> None:
+        self.__is_training = is_training
+
+    def get_biome(self) -> str:
+        return self.__biome
+
+    def set_biome(self, biome: str) -> None:
+        self.__biome = biome
+
+    def get_variations(self) -> str:
+        return self.__variations
+
+    def set_variations(self, variations: str) -> None:
+        self.__variations = variations
+
+    def get_health(self) -> float:
+        return self.__health
+
+    def set_health(self, health: float) -> None:
+        self.__health = health
+
+    def get_speed(self) -> float:
+        return self.__speed
+
+    def set_speed(self, speed: float) -> None:
+        self.__speed = speed
+
+    # END getter/setter
     def Move(self, speed: float) -> None:
-        self.speed += speed
+        self.__speed += speed
 
     def Stop(self) -> None:
-        self.speed = 0
+        self.__speed = 0
 
     def Receive_damage(self, damage: float) -> None:
-        self.health -= damage
+        self.__health -= damage
 
 
 a1 = Animal("Fox", "Small", 1, False, "Taiga", "Fox", 100, 0)
 
 print()
-print(f"Name: {a1.name}")
-print(f"Size: {a1.size}")
-print(f"Age: {a1.age}")
-print(f"Is training: {a1.is_training}")
-print(f"Biome: {a1.biome}")
-print(f"Variations: {a1.variations}")
-print(f"Health: {a1.health}")
-print(f"Speed: {a1.speed}")
+print(f"Name: {a1.get_name()}")
+print(f"Size: {a1.get_size()}")
+print(f"Age: {a1.get_age()}")
+print(f"Is training: {a1.get_is_training()}")
+print(f"Biome: {a1.get_biome()}")
+print(f"Variations: {a1.get_variations()}")
+print(f"Health: {a1.get_health()}")
+print(f"Speed: {a1.get_speed()}")
 
 a1.Move(10)
-print(f"{a1.name}'s speed now {a1.speed}")
+print(f"{a1.get_name()}'s speed now {a1.get_speed()}")
 a1.Stop()
-print(f"{a1.name}'s speed now {a1.speed}")
+print(f"{a1.get_name()}'s speed now {a1.get_speed()}")
 a1.Receive_damage(50)
-print(f"{a1.name}'s health now {a1.health}")
+print(f"{a1.get_name()}'s health now {a1.get_health()}")
 
 a2 = Animal("Capybara", "Medium", 3, True, "Wetland", "Capybara", 100, 0)
 
 
 print()
-print(f"Name: {a2.name}")
-print(f"Size: {a2.size}")
-print(f"Age: {a2.age}")
-print(f"Is training: {a2.is_training}")
-print(f"Biome: {a2.biome}")
-print(f"Variations: {a2.variations}")
-print(f"Health: {a2.health}")
-print(f"Speed: {a2.speed}")
+print(f"Name: {a2.get_name()}")
+print(f"Size: {a2.get_size()}")
+print(f"Age: {a2.get_age()}")
+print(f"Is training: {a2.get_is_training()}")
+print(f"Biome: {a2.get_biome()}")
+print(f"Variations: {a2.get_variations()}")
+print(f"Health: {a2.get_health()}")
+print(f"Speed: {a2.get_speed()}")
 
 a2.Move(15)
-print(f"{a2.name}'s speed now {a2.speed}")
+print(f"{a2.get_name()}'s speed now {a2.get_speed()}")
 a2.Stop()
-print(f"{a2.name}'s speed now {a2.speed}")
+print(f"{a2.get_name()}'s speed now {a2.get_speed()}")
 a2.Receive_damage(20)
-print(f"{a2.name}'s health now {a2.health}")
+print(f"{a2.get_name()}'s health now {a2.get_health()}")
 # END class Animal
