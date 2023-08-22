@@ -757,3 +757,166 @@ c1.searching_for_predator()
 print(f"{c1.get_type_of_carp()} is now searching for predator")
 print(f"Is searching for food: {c1.get_is_searching_for_food()}")
 print(f"Is searching for predator: {c1.get_is_searching_for_predator()}")
+
+
+class Aquarium:
+    def __init__(
+        self,
+        length: float,
+        width: float,
+        height: float,
+        water_type: str,
+    ) -> None:
+        self._length = length  # m
+        self._width = width  # m
+        self._height = height  # m
+        self._water_type = water_type
+        self._volume = self._length * self._width * self._height  # m^3
+        self._water_level = 0  # %
+
+    # BEGIN getter/setter
+    def get_length(self) -> float:
+        return self._length
+
+    def get_width(self) -> float:
+        return self._width
+
+    def get_height(self) -> float:
+        return self._height
+
+    def get_volume(self) -> float:
+        return self._volume
+
+    def get_water_type(self) -> str:
+        return self._water_type
+
+    def set_water_type(self, water_type: str) -> None:
+        self._water_type = water_type
+
+    def get_water_level(self) -> float:
+        return self._water_level
+
+    def set_water_level(self, water_level: float) -> None:
+        if water_level >= 0 and water_level <= 100:
+            self._water_level = water_level
+
+    # END getter/setter
+
+    def fill(self) -> None:
+        self._water_level = 100
+
+    def drain(self) -> None:
+        self._water_level = 0
+
+
+class Aquarium_for_Shark(Aquarium):
+    def __init__(
+        self,
+        length: float,
+        width: float,
+        height: float,
+        water_type: str,
+        salt_level: float,
+    ) -> None:
+        super().__init__(length, width, height, water_type)
+        self._salt_level = salt_level  # %
+        self._is_current_on = False
+
+    # BEGIN getter/setter
+    def get_salt_level(self) -> float:
+        return self._salt_level
+
+    def get_is_current_on(self) -> bool:
+        return self._is_current_on
+
+    # END getter/setter
+
+    def add_salt(self, salt_level: float) -> None:
+        self._salt_level += salt_level
+
+    def switch_current(self) -> None:
+        if self._is_current_on:
+            self._is_current_on = False
+        else:
+            self._is_current_on = True
+
+
+aq1 = Aquarium_for_Shark(50, 100, 50, "saltwater", 0)
+
+
+print()
+print(f"Length: {aq1.get_length()}")
+print(f"Width: {aq1.get_width()}")
+print(f"Height: {aq1.get_height()}")
+print(f"Volume: {aq1.get_volume()}")
+print(f"Water type: {aq1.get_water_type()}")
+print(f"Water level: {aq1.get_water_level()}")
+print(f"Salt level: {aq1.get_salt_level()}")
+print(f"Is current on: {aq1.get_is_current_on()}")
+
+aq1.fill()
+print(f"Water level: {aq1.get_water_level()}")
+aq1.drain()
+print(f"Water level: {aq1.get_water_level()}")
+
+aq1.set_water_level(50)
+print(f"Water level: {aq1.get_water_level()}")
+aq1.add_salt(90)
+print(f"Salt level: {aq1.get_salt_level()}")
+aq1.switch_current()
+print(f"Is current on: {aq1.get_is_current_on()}")
+
+
+class Aquarium_for_Carp(Aquarium):
+    def __init__(
+        self,
+        length: float,
+        width: float,
+        height: float,
+        water_type: str,
+        hardness_of_water: float,
+        plants: int,
+    ) -> None:
+        super().__init__(length, width, height, water_type)
+        self._hardness_of_water = hardness_of_water  # degrees
+        self._plants = plants
+
+    # BEGIN getter/setter
+    def get_hardness_of_water(self) -> float:
+        return self._hardness_of_water
+
+    def get_plants(self) -> int:
+        return self._plants
+
+    # END getter/setter
+
+    def add_hardness(self, hardness_of_water: float) -> None:
+        self._hardness_of_water += hardness_of_water
+
+    def add_plants(self, plants: int) -> None:
+        self._plants += plants
+
+
+aq2 = Aquarium_for_Carp(20, 50, 20, "freshwater", 0, 0)
+
+print()
+print(f"Length: {aq2.get_length()}")
+print(f"Width: {aq2.get_width()}")
+print(f"Height: {aq2.get_height()}")
+print(f"Volume: {aq2.get_volume()}")
+print(f"Water type: {aq2.get_water_type()}")
+print(f"Water level: {aq2.get_water_level()}")
+print(f"Hardness of water: {aq2.get_hardness_of_water()}")
+print(f"Plants: {aq2.get_plants()}")
+
+aq2.fill()
+print(f"Water level: {aq2.get_water_level()}")
+aq2.drain()
+print(f"Water level: {aq2.get_water_level()}")
+
+aq2.set_water_level(80)
+print(f"Water level: {aq2.get_water_level()}")
+aq2.add_hardness(20)
+print(f"Hardness of water: {aq2.get_hardness_of_water()}")
+aq2.add_plants(10)
+print(f"Plants: {aq2.get_plants()}")
