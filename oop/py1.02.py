@@ -1,3 +1,6 @@
+from copy import deepcopy
+from random import choice
+
 """ 1.1
 Classes for editing modes in emacs and variety of major and minor instances of modes.
 - emacs
@@ -808,6 +811,9 @@ class Aquarium:
     def drain(self) -> None:
         self._water_level = 0
 
+    def foo(self) -> None:
+        print(self.__class__.__name__)
+
 
 class Aquarium_for_Shark(Aquarium):
     def __init__(
@@ -857,6 +863,9 @@ class Aquarium_for_Shark(Aquarium):
 
     def add_fish(self, fish: Shark) -> None:
         self._fish.append(fish)
+
+    def foo(self) -> None:
+        print(self.__class__.__name__)
 
 
 aq1 = Aquarium_for_Shark(50, 100, 50, "saltwater", 0)
@@ -938,6 +947,9 @@ class Aquarium_for_Carp(Aquarium):
     def add_fish(self, fish: Carp) -> None:
         self._fish.append(fish)
 
+    def foo(self) -> None:
+        print(self.__class__.__name__)
+
 
 aq2 = Aquarium_for_Carp(20, 50, 20, "freshwater", 0, 0)
 
@@ -967,3 +979,27 @@ aq2.add_hardness(20)
 print(f"Hardness of water: {aq2.get_hardness_of_water()}")
 aq2.add_plants(10)
 print(f"Plants: {aq2.get_plants()}")
+
+# BEGIN 1.05 (4.2)
+print()
+a01 = Aquarium(10, 10, 10, "freshwater")
+a02 = Aquarium_for_Shark(10, 10, 10, "saltwater", 0)
+a03 = Aquarium_for_Carp(10, 10, 10, "freshwater", 0, 0)
+a01.foo()
+a02.foo()
+a03.foo()
+
+lst = []
+for i in range(500):
+    lst.append(choice([deepcopy(a02), deepcopy(a03)]))  # type: ignore
+
+print()
+print(f"Length: {len(lst)}")
+for i in range(len(lst)):
+    lst[i].foo()  # type: ignore
+    print(id(lst[i]))  # type: ignore
+
+# i have overridden the parent "foo" method in each child class,
+# so each object runs its own "foo" method
+
+# END 1.05 (4.2)
