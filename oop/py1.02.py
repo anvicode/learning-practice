@@ -950,6 +950,20 @@ class Aquarium_for_Carp(Aquarium):
     def foo(self) -> None:
         print(self.__class__.__name__)
 
+    def bar(self, *args) -> None:  # type: ignore
+        if len(args) == 1:  # type: ignore
+            print(*args)  # type: ignore
+        elif len(args) == 2:  # type: ignore
+            a, b = args  # type: ignore
+            if isinstance(a, int) and isinstance(b, int):
+                print(a + b)
+            elif isinstance(a, float) and isinstance(b, float):
+                print(a + b)
+            elif isinstance(a, str) and isinstance(b, str):
+                print(a + b)
+        else:
+            print(*args)  # type: ignore
+
 
 aq2 = Aquarium_for_Carp(20, 50, 20, "freshwater", 0, 0)
 
@@ -1003,3 +1017,24 @@ for i in range(len(lst)):
 # so each object runs its own "foo" method
 
 # END 1.05 (4.2)
+
+
+# BEGIN 1.05 (4.3)
+# there is not ad hoc polymorphism in Python
+# but i can use condition statements in the method
+# to change the behavior depending on the arguments
+
+print()
+a03.bar("bar")  # type: ignore
+# => bar
+
+a03.bar("bar", "foo")  # type: ignore
+# => barfoo
+
+a03.bar(2, 2)  # type: ignore
+# => 4
+
+a03.bar(2, 2, 3)  # type: ignore
+# => 2, 2, 3
+
+# END 1.05 (4.3)
