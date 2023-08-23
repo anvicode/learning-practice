@@ -817,10 +817,12 @@ class Aquarium_for_Shark(Aquarium):
         height: float,
         water_type: str,
         salt_level: float,
+        fish: list[Shark] = [],
     ) -> None:
         super().__init__(length, width, height, water_type)
         self._salt_level = salt_level  # %
         self._is_current_on = False
+        self._fish = fish
 
     # BEGIN getter/setter
     def get_salt_level(self) -> float:
@@ -828,6 +830,19 @@ class Aquarium_for_Shark(Aquarium):
 
     def get_is_current_on(self) -> bool:
         return self._is_current_on
+
+    def get_fish(self) -> list[list[str | float]]:
+        return [
+            [
+                i.get_type_of_shark(),
+                i.get_length(),
+                i.get_weight(),
+                i.get_speed(),
+                i.get_water_type(),
+                i.get_is_hunting(),
+            ]
+            for i in self._fish
+        ]
 
     # END getter/setter
 
@@ -839,6 +854,9 @@ class Aquarium_for_Shark(Aquarium):
             self._is_current_on = False
         else:
             self._is_current_on = True
+
+    def add_fish(self, fish: Shark) -> None:
+        self._fish.append(fish)
 
 
 aq1 = Aquarium_for_Shark(50, 100, 50, "saltwater", 0)
@@ -853,6 +871,11 @@ print(f"Water type: {aq1.get_water_type()}")
 print(f"Water level: {aq1.get_water_level()}")
 print(f"Salt level: {aq1.get_salt_level()}")
 print(f"Is current on: {aq1.get_is_current_on()}")
+print(f"Fish: {aq1.get_fish()}")
+aq1.add_fish(sh1)
+aq1.add_fish(Shark(6, 650, 17, "saltwater", False, "Tiger shark"))
+aq1.add_fish(Shark(5, 550, 14, "saltwater", False, "Tiger shark"))
+print(f"Fish: {aq1.get_fish()}")
 
 aq1.fill()
 print(f"Water level: {aq1.get_water_level()}")
@@ -876,10 +899,12 @@ class Aquarium_for_Carp(Aquarium):
         water_type: str,
         hardness_of_water: float,
         plants: int,
+        fish: list[Carp] = [],
     ) -> None:
         super().__init__(length, width, height, water_type)
         self._hardness_of_water = hardness_of_water  # degrees
         self._plants = plants
+        self._fish = fish
 
     # BEGIN getter/setter
     def get_hardness_of_water(self) -> float:
@@ -888,6 +913,20 @@ class Aquarium_for_Carp(Aquarium):
     def get_plants(self) -> int:
         return self._plants
 
+    def get_fish(self) -> list[list[str | float | bool]]:
+        return [
+            [
+                i.get_type_of_carp(),
+                i.get_length(),
+                i.get_weight(),
+                i.get_speed(),
+                i.get_water_type(),
+                i.get_is_searching_for_food(),
+                i.get_is_searching_for_predator(),
+            ]
+            for i in self._fish
+        ]
+
     # END getter/setter
 
     def add_hardness(self, hardness_of_water: float) -> None:
@@ -895,6 +934,9 @@ class Aquarium_for_Carp(Aquarium):
 
     def add_plants(self, plants: int) -> None:
         self._plants += plants
+
+    def add_fish(self, fish: Carp) -> None:
+        self._fish.append(fish)
 
 
 aq2 = Aquarium_for_Carp(20, 50, 20, "freshwater", 0, 0)
@@ -908,6 +950,11 @@ print(f"Water type: {aq2.get_water_type()}")
 print(f"Water level: {aq2.get_water_level()}")
 print(f"Hardness of water: {aq2.get_hardness_of_water()}")
 print(f"Plants: {aq2.get_plants()}")
+print(f"Fish: {aq2.get_fish()}")
+aq2.add_fish(c1)
+aq2.add_fish(Carp(0.4, 4, 7, "freshwater", "Common Carp"))
+aq2.add_fish(Carp(0.6, 3, 4, "freshwater", "Common Carp"))
+print(f"Fish: {aq2.get_fish()}")
 
 aq2.fill()
 print(f"Water level: {aq2.get_water_level()}")
