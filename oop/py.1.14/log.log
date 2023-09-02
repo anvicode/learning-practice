@@ -1,0 +1,275 @@
+ 2023-09-02 13:04:27 ERROR [test_make_cat.py:31] Test failed Lists differ: [<mak[24 chars]2f9e490>, <make_cat.Cat object at 0x102f9e4d0>[34 chars]510>] != [<mak[24 chars]2f9e410>, <make_cat.Cat object at 0x102f9e310>[34 chars]250>]
+
+First differing element 0:
+<make_cat.Cat object at 0x102f9e490>
+<make_cat.Cat object at 0x102f9e410>
+
+- [<make_cat.Cat object at 0x102f9e490>,
+?                                   ^
+
++ [<make_cat.Cat object at 0x102f9e410>,
+?                                   ^
+
+-  <make_cat.Cat object at 0x102f9e4d0>,
+?                                  ^^
+
++  <make_cat.Cat object at 0x102f9e310>,
+?                                  ^^
+
+-  <make_cat.Cat object at 0x102f9e510>]
+?                                   -
+
++  <make_cat.Cat object at 0x102f9e250>]
+?                                  +
+
+ 2023-09-02 13:05:28 ERROR [test_make_cat.py:31] Test failed Lists differ: [<mak[24 chars]5572490>, <make_cat.Cat object at 0x1055724d0>[34 chars]510>] != [<mak[24 chars]5572410>, <make_cat.Cat object at 0x105572310>[34 chars]250>]
+
+First differing element 0:
+<make_cat.Cat object at 0x105572490>
+<make_cat.Cat object at 0x105572410>
+
+- [<make_cat.Cat object at 0x105572490>,
+?                                   ^
+
++ [<make_cat.Cat object at 0x105572410>,
+?                                   ^
+
+-  <make_cat.Cat object at 0x1055724d0>,
+?                                  ^^
+
++  <make_cat.Cat object at 0x105572310>,
+?                                  ^^
+
+-  <make_cat.Cat object at 0x105572510>]
+?                                   -
+
++  <make_cat.Cat object at 0x105572250>]
+?                                  +
+
+ 2023-09-02 13:07:35 ERROR [test_make_cat.py:31] Test failed Lists differ: [<make_cat.Cat object at 0x103876e50>, <ma[67 chars]ed0>] != ['"Барсик", 5.0, 75', '"Марсик", 6.0, 65',[16 chars] 55']
+
+First differing element 0:
+<make_cat.Cat object at 0x103876e50>
+'"Барсик", 5.0, 75'
+
++ ['"Барсик", 5.0, 75', '"Марсик", 6.0, 65', '"Парсик", 4.0, 55']
+- [<make_cat.Cat object at 0x103876e50>,
+-  <make_cat.Cat object at 0x103876e90>,
+-  <make_cat.Cat object at 0x103876ed0>]
+ 2023-09-02 13:11:33 INFO [test_make_cat.py:29] Test passed
+ 2023-09-02 13:11:40 ERROR [test_make_cat.py:31] Test failed Lists differ: [('Барсик', 5.0, 75), ('Марсик', 6.0, 65), ('Парсик', 4.0, 55)] != [('Барсик', 5.0, 75), ('Марсик', 6.0, 65), ('Парсик', 4.0, 551)]
+
+First differing element 2:
+('Парсик', 4.0, 55)
+('Парсик', 4.0, 551)
+
+- [('Барсик', 5.0, 75), ('Марсик', 6.0, 65), ('Парсик', 4.0, 55)]
++ [('Барсик', 5.0, 75), ('Марсик', 6.0, 65), ('Парсик', 4.0, 551)]
+?                                                              +
+
+ 2023-09-02 13:12:17 ERROR [test_make_cat.py:31] Test failed Lists differ: [('Барсик', 5.0, 75), ('Марсик', 6.0, 65), ('Парсик', 4.0, 55)] != [('Барсик', 5.0, 75), ('Марсик', 6.0, 65), ('Парсик', 4.0, 551)]
+
+First differing element 2:
+('Парсик', 4.0, 55)
+('Парсик', 4.0, 551)
+
+- [('Барсик', 5.0, 75), ('Марсик', 6.0, 65), ('Парсик', 4.0, 55)]
++ [('Барсик', 5.0, 75), ('Марсик', 6.0, 65), ('Парсик', 4.0, 551)]
+?                                                              +
+
+ 2023-09-02 13:12:56 ERROR [test_make_cat.py:31] Test failed Lists differ: [('Барсик', 5.0, 75), ('Марсик', 6.0, 65), ('Парсик', 4.0, 55)] != [('Барсик', 5.0, 75), ('Марсик', 6.0, 65), ('Парсик', 4.0, 551)]
+
+First differing element 2:
+('Парсик', 4.0, 55)
+('Парсик', 4.0, 551)
+
+- [('Барсик', 5.0, 75), ('Марсик', 6.0, 65), ('Парсик', 4.0, 55)]
++ [('Барсик', 5.0, 75), ('Марсик', 6.0, 65), ('Парсик', 4.0, 551)]
+?                                                              +
+
+ 2023-09-02 13:13:04 INFO [test_make_cat.py:29] Test passed
+ 2023-09-02 13:13:32 ERROR [test_make_cat.py:31] Test failed Lists differ: [('Барсик', 5.0, 75), ('Марсик', 6.0, 65), ('Парсик', 4.0, 55)] != [('Барсик', 5.0, 75), ('Марсик', 6.0, 65), ('Парсик', 4.0, 551)]
+
+First differing element 2:
+('Парсик', 4.0, 55)
+('Парсик', 4.0, 551)
+
+- [('Барсик', 5.0, 75), ('Марсик', 6.0, 65), ('Парсик', 4.0, 55)]
++ [('Барсик', 5.0, 75), ('Марсик', 6.0, 65), ('Парсик', 4.0, 551)]
+?                                                              +
+
+ 2023-09-02 13:14:24 ERROR [test_make_cat.py:31] Test failed
+ 2023-09-02 13:15:10 INFO [make_cat.py:45] 'Барсик 5.0 75' has added
+ 2023-09-02 13:15:10 INFO [make_cat.py:45] 'Марсик 6.0 65' has added
+ 2023-09-02 13:15:10 INFO [make_cat.py:45] 'Парсик 4.0 55' has added
+ 2023-09-02 13:15:10 INFO [make_cat.py:46] Cats: ['Барсик 5.0 75', 'Марсик 6.0 65', 'Парсик 4.0 55']
+ 2023-09-02 13:15:22 INFO [make_cat.py:45] 'Барсик 5.0 75' has added
+ 2023-09-02 13:15:22 INFO [make_cat.py:45] 'Марсик 6.0 65' has added
+ 2023-09-02 13:15:22 ERROR [make_cat.py:49] invalid literal for int() with base 10: '5e5'
+ 2023-09-02 13:15:27 INFO [make_cat.py:45] 'Барсик 5.0 75' has added
+ 2023-09-02 13:15:27 INFO [make_cat.py:45] 'Марсик 6.0 65' has added
+ 2023-09-02 13:15:27 ERROR [make_cat.py:49] invalid literal for int() with base 10: '5e5'
+ 2023-09-02 13:15:27 INFO [make_cat.py:45] 'Барсик 5.0 75' has added
+ 2023-09-02 13:15:27 INFO [make_cat.py:45] 'Марсик 6.0 65' has added
+ 2023-09-02 13:15:27 ERROR [make_cat.py:49] invalid literal for int() with base 10: '5e5'
+ 2023-09-02 13:15:27 ERROR [test_make_cat.py:31] Test failed
+ 2023-09-02 13:15:27 INFO [make_cat.py:45] 'Барсик 5.0 75' has added
+ 2023-09-02 13:15:27 INFO [make_cat.py:45] 'Марсик 6.0 65' has added
+ 2023-09-02 13:15:27 ERROR [make_cat.py:49] invalid literal for int() with base 10: '5e5'
+ 2023-09-02 13:15:36 INFO [make_cat.py:45] 'Барсик 5.0 75' has added
+ 2023-09-02 13:15:36 INFO [make_cat.py:45] 'Марсик 6.0 65' has added
+ 2023-09-02 13:15:36 ERROR [make_cat.py:49] invalid literal for int() with base 10: '5e5'
+ 2023-09-02 13:15:36 INFO [make_cat.py:45] 'Барсик 5.0 75' has added
+ 2023-09-02 13:15:36 INFO [make_cat.py:45] 'Марсик 6.0 65' has added
+ 2023-09-02 13:15:36 ERROR [make_cat.py:49] invalid literal for int() with base 10: '5e5'
+ 2023-09-02 13:15:36 ERROR [test_make_cat.py:31] Test failed
+ 2023-09-02 13:15:36 INFO [make_cat.py:45] 'Барсик 5.0 75' has added
+ 2023-09-02 13:15:36 INFO [make_cat.py:45] 'Марсик 6.0 65' has added
+ 2023-09-02 13:15:36 ERROR [make_cat.py:49] invalid literal for int() with base 10: '5e5'
+ 2023-09-02 13:16:08 INFO [make_cat.py:45] 'Барсик 5.0 75' has added
+ 2023-09-02 13:16:08 INFO [make_cat.py:45] 'Марсик 6.0 65' has added
+ 2023-09-02 13:16:08 INFO [make_cat.py:45] 'Парсик 4.0 55' has added
+ 2023-09-02 13:16:08 INFO [make_cat.py:46] Cats: ['Барсик 5.0 75', 'Марсик 6.0 65', 'Парсик 4.0 55']
+ 2023-09-02 13:16:10 INFO [make_cat.py:45] 'Барсик 5.0 75' has added
+ 2023-09-02 13:16:10 INFO [make_cat.py:45] 'Марсик 6.0 65' has added
+ 2023-09-02 13:16:10 INFO [make_cat.py:45] 'Парсик 4.0 55' has added
+ 2023-09-02 13:16:10 INFO [make_cat.py:46] Cats: ['Барсик 5.0 75', 'Марсик 6.0 65', 'Парсик 4.0 55']
+ 2023-09-02 13:16:10 INFO [make_cat.py:45] 'Барсик 5.0 75' has added
+ 2023-09-02 13:16:10 INFO [make_cat.py:45] 'Марсик 6.0 65' has added
+ 2023-09-02 13:16:10 INFO [make_cat.py:45] 'Парсик 4.0 55' has added
+ 2023-09-02 13:16:10 INFO [make_cat.py:46] Cats: ['Барсик 5.0 75', 'Марсик 6.0 65', 'Парсик 4.0 55']
+ 2023-09-02 13:16:10 INFO [test_make_cat.py:29] Test passed
+ 2023-09-02 13:17:05 INFO [make_cat.py:45] 'Барсик 5.0 75' has added
+ 2023-09-02 13:17:05 INFO [make_cat.py:45] 'Марсик 6.0 65' has added
+ 2023-09-02 13:17:05 INFO [make_cat.py:45] 'Парсик 4.0 55' has added
+ 2023-09-02 13:17:05 INFO [make_cat.py:46] Cats: ['Барсик 5.0 75', 'Марсик 6.0 65', 'Парсик 4.0 55']
+ 2023-09-02 13:17:05 INFO [test_make_cat.py:21] Test started
+ 2023-09-02 13:17:05 INFO [make_cat.py:45] 'Барсик 5.0 75' has added
+ 2023-09-02 13:17:05 INFO [make_cat.py:45] 'Марсик 6.0 65' has added
+ 2023-09-02 13:17:05 INFO [make_cat.py:45] 'Парсик 4.0 55' has added
+ 2023-09-02 13:17:05 INFO [make_cat.py:46] Cats: ['Барсик 5.0 75', 'Марсик 6.0 65', 'Парсик 4.0 55']
+ 2023-09-02 13:17:05 INFO [test_make_cat.py:30] Test passed
+ 2023-09-02 13:17:50 INFO [make_cat.py:45] 'Барсик 5.0 75' has added
+ 2023-09-02 13:17:50 INFO [make_cat.py:45] 'Марсик 6.0 65' has added
+ 2023-09-02 13:17:50 INFO [make_cat.py:45] 'Парсик 4.0 55' has added
+ 2023-09-02 13:17:50 INFO [make_cat.py:46] Cats: ['Барсик 5.0 75', 'Марсик 6.0 65', 'Парсик 4.0 55']
+ 2023-09-02 13:17:50 INFO [test_make_cat.py:20] Test started
+ 2023-09-02 13:17:50 INFO [make_cat.py:45] 'Барсик 5.0 75' has added
+ 2023-09-02 13:17:50 INFO [make_cat.py:45] 'Марсик 6.0 65' has added
+ 2023-09-02 13:17:50 INFO [make_cat.py:45] 'Парсик 4.0 55' has added
+ 2023-09-02 13:17:50 INFO [make_cat.py:46] Cats: ['Барсик 5.0 75', 'Марсик 6.0 65', 'Парсик 4.0 55']
+ 2023-09-02 13:17:50 INFO [test_make_cat.py:30] Test passed
+ 2023-09-02 13:18:34 INFO [make_cat.py:45] 'Барсик 5.0 75' has added
+ 2023-09-02 13:18:34 INFO [make_cat.py:45] 'Марсик 6.0 65' has added
+ 2023-09-02 13:18:34 INFO [make_cat.py:45] 'Парсик 4.0 55' has added
+ 2023-09-02 13:18:34 INFO [make_cat.py:46] Cats: ['Барсик 5.0 75', 'Марсик 6.0 65', 'Парсик 4.0 55']
+ 2023-09-02 13:18:34 INFO [test_make_cat.py:21] Test started
+ 2023-09-02 13:18:34 INFO [make_cat.py:45] 'Барсик 5.0 75' has added
+ 2023-09-02 13:18:34 INFO [make_cat.py:45] 'Марсик 6.0 65' has added
+ 2023-09-02 13:18:34 INFO [make_cat.py:45] 'Парсик 4.0 55' has added
+ 2023-09-02 13:18:34 INFO [make_cat.py:46] Cats: ['Барсик 5.0 75', 'Марсик 6.0 65', 'Парсик 4.0 55']
+ 2023-09-02 13:18:34 INFO [test_make_cat.py:30] Test passed
+ 2023-09-02 13:20:29 INFO [test_main.py:30] Test passed
+ 2023-09-02 13:20:29 INFO [test_main.py:22] Test passed
+ 2023-09-02 13:21:49 INFO [main.py:32] fl1: <generator object sum_of_two_files.<locals>.<genexpr> at 0x104d7bbc0>, fl2: <generator object sum_of_two_files.<locals>.<genexpr> at 0x104d7bca0>
+ 2023-09-02 13:22:24 INFO [main.py:32] 25
+ 2023-09-02 13:22:26 INFO [main.py:32] 29
+ 2023-09-02 13:22:56 ERROR [main.py:36] invalid literal for int() with base 10: '1dsasa'
+ 2023-09-02 13:22:57 INFO [main.py:33] 29
+ 2023-09-02 13:22:58 INFO [main.py:33] 28
+ 2023-09-02 13:23:17 INFO [main.py:33] Sum of file1.txt and file1.txt = 24
+ 2023-09-02 13:23:48 INFO [main.py:33] Sum of file3.txt and file9.txt = 17
+ 2023-09-02 13:24:00 INFO [main.py:33] Sum of file5.txt and file6.txt = 36
+ 2023-09-02 13:24:01 INFO [main.py:33] Sum of file2.txt and file1.txt = 23
+ 2023-09-02 13:24:02 INFO [main.py:33] Sum of file2.txt and file9.txt = 28
+ 2023-09-02 13:24:02 INFO [main.py:33] Sum of file7.txt and file3.txt = 14
+ 2023-09-02 13:24:03 ERROR [main.py:36] invalid literal for int() with base 10: '1dsasa'
+ 2023-09-02 13:24:03 INFO [main.py:33] Sum of file10.txt and file10.txt = 34
+ 2023-09-02 13:24:27 INFO [main.py:33] Sum of file4.txt and file7.txt = 14
+ 2023-09-02 13:24:37 INFO [main.py:33] Sum of file7.txt and file9.txt = 31
+ 2023-09-02 13:24:40 INFO [main.py:33] Sum of file7.txt and file2.txt = 25
+ 2023-09-02 13:24:41 INFO [main.py:33] Sum of file5.txt and file4.txt = 19
+ 2023-09-02 13:24:41 ERROR [main.py:36] invalid literal for int() with base 10: '1dsasa'
+ 2023-09-02 13:24:41 ERROR [main.py:36] invalid literal for int() with base 10: '1dsasa'
+ 2023-09-02 13:24:56 ERROR [main.py:36] invalid literal for int() with base 10: '1dsasa'
+ 2023-09-02 13:24:56 INFO [main.py:33] Sum of file3.txt and file4.txt = 0
+ 2023-09-02 13:24:56 INFO [test_main.py:30] Test passed
+ 2023-09-02 13:24:56 INFO [main.py:33] Sum of file1.txt and file2.txt = 23
+ 2023-09-02 13:24:56 INFO [test_main.py:22] Test passed
+ 2023-09-02 13:24:58 INFO [main.py:33] Sum of file10.txt and file5.txt = 36
+ 2023-09-02 13:24:58 INFO [main.py:33] Sum of file3.txt and file4.txt = 0
+ 2023-09-02 13:24:58 INFO [test_main.py:30] Test passed
+ 2023-09-02 13:24:58 INFO [main.py:33] Sum of file1.txt and file2.txt = 23
+ 2023-09-02 13:24:58 INFO [test_main.py:22] Test passed
+ 2023-09-02 13:24:58 INFO [main.py:33] Sum of file6.txt and file2.txt = 28
+ 2023-09-02 13:24:58 INFO [main.py:33] Sum of file3.txt and file4.txt = 0
+ 2023-09-02 13:24:58 INFO [test_main.py:30] Test passed
+ 2023-09-02 13:24:58 INFO [main.py:33] Sum of file1.txt and file2.txt = 23
+ 2023-09-02 13:24:58 INFO [test_main.py:22] Test passed
+ 2023-09-02 13:24:59 INFO [main.py:33] Sum of file6.txt and file3.txt = 17
+ 2023-09-02 13:24:59 INFO [main.py:33] Sum of file3.txt and file4.txt = 0
+ 2023-09-02 13:24:59 INFO [test_main.py:30] Test passed
+ 2023-09-02 13:24:59 INFO [main.py:33] Sum of file1.txt and file2.txt = 23
+ 2023-09-02 13:24:59 INFO [test_main.py:22] Test passed
+ 2023-09-02 13:25:52 INFO [main.py:20] file1.txt created
+ 2023-09-02 13:25:52 INFO [main.py:20] file2.txt created
+ 2023-09-02 13:25:52 INFO [main.py:20] file3.txt created
+ 2023-09-02 13:25:52 INFO [main.py:20] file4.txt created
+ 2023-09-02 13:25:52 INFO [main.py:20] file5.txt created
+ 2023-09-02 13:25:52 INFO [main.py:20] file6.txt created
+ 2023-09-02 13:25:52 INFO [main.py:20] file7.txt created
+ 2023-09-02 13:25:52 INFO [main.py:20] file8.txt created
+ 2023-09-02 13:25:52 INFO [main.py:20] file9.txt created
+ 2023-09-02 13:25:52 INFO [main.py:20] file10.txt created
+ 2023-09-02 13:25:52 INFO [main.py:32] Sum of file6.txt and file6.txt = 40
+ 2023-09-02 13:26:55 INFO [main.py:32] Sum of file1.txt and file1.txt = 48
+ 2023-09-02 13:27:02 INFO [main.py:32] Sum of file2.txt and file7.txt = 33
+ 2023-09-02 13:27:02 INFO [main.py:32] Sum of file3.txt and file4.txt = 39
+ 2023-09-02 13:27:02 ERROR [test_main.py:32] Test failed 39 != 0
+ 2023-09-02 13:27:02 INFO [main.py:32] Sum of file3.txt and file4.txt = 39
+ 2023-09-02 13:27:02 INFO [main.py:32] Sum of file1.txt and file2.txt = 38
+ 2023-09-02 13:27:02 ERROR [test_main.py:24] Test failed 38 != 23
+ 2023-09-02 13:27:02 INFO [main.py:32] Sum of file1.txt and file2.txt = 38
+ 2023-09-02 13:27:11 INFO [main.py:32] Sum of file5.txt and file2.txt = 26
+ 2023-09-02 13:27:11 INFO [main.py:32] Sum of file3.txt and file4.txt = 39
+ 2023-09-02 13:27:11 ERROR [test_main.py:32] Test failed 39 != 0
+ 2023-09-02 13:27:11 INFO [main.py:32] Sum of file3.txt and file4.txt = 39
+ 2023-09-02 13:27:11 INFO [main.py:32] Sum of file1.txt and file2.txt = 38
+ 2023-09-02 13:27:11 INFO [test_main.py:22] Test passed
+ 2023-09-02 13:27:30 INFO [main.py:32] Sum of file4.txt and file10.txt = 15
+ 2023-09-02 13:27:30 INFO [main.py:32] Sum of file3.txt and file4.txt = 0
+ 2023-09-02 13:27:30 INFO [test_main.py:30] Test passed
+ 2023-09-02 13:27:30 INFO [main.py:32] Sum of file1.txt and file2.txt = 38
+ 2023-09-02 13:27:30 INFO [test_main.py:22] Test passed
+ 2023-09-02 13:28:00 INFO [make_cat.py:45] 'Барсик 5.0 75' has added
+ 2023-09-02 13:28:00 INFO [make_cat.py:45] 'Марсик 6.0 65' has added
+ 2023-09-02 13:28:00 INFO [make_cat.py:45] 'Парсик 4.0 55' has added
+ 2023-09-02 13:28:00 INFO [make_cat.py:46] Cats: ['Барсик 5.0 75', 'Марсик 6.0 65', 'Парсик 4.0 55']
+ 2023-09-02 13:28:00 INFO [test_make_cat.py:21] Test started
+ 2023-09-02 13:28:00 INFO [make_cat.py:45] 'Барсик 5.0 75' has added
+ 2023-09-02 13:28:00 INFO [make_cat.py:45] 'Марсик 6.0 65' has added
+ 2023-09-02 13:28:00 INFO [make_cat.py:45] 'Парсик 4.0 55' has added
+ 2023-09-02 13:28:00 INFO [make_cat.py:46] Cats: ['Барсик 5.0 75', 'Марсик 6.0 65', 'Парсик 4.0 55']
+ 2023-09-02 13:28:00 INFO [test_make_cat.py:30] Test passed
+ 2023-09-02 13:28:25 INFO [make_cat.py:45] 'Барсик 5.0 75' has added
+ 2023-09-02 13:28:25 INFO [make_cat.py:45] 'Марсик 6.0 65' has added
+ 2023-09-02 13:28:25 INFO [make_cat.py:45] 'Парсик 4.0 55' has added
+ 2023-09-02 13:28:25 INFO [make_cat.py:46] Cats: ['Барсик 5.0 75', 'Марсик 6.0 65', 'Парсик 4.0 55']
+ 2023-09-02 13:28:25 INFO [make_cat.py:45] 'Барсик 5.0 75' has added
+ 2023-09-02 13:28:25 INFO [make_cat.py:45] 'Марсик 6.0 65' has added
+ 2023-09-02 13:28:25 INFO [make_cat.py:45] 'Парсик 4.0 55' has added
+ 2023-09-02 13:28:25 INFO [make_cat.py:46] Cats: ['Барсик 5.0 75', 'Марсик 6.0 65', 'Парсик 4.0 55']
+ 2023-09-02 13:28:25 INFO [test_make_cat.py:29] Test passed
+ 2023-09-02 13:28:32 INFO [make_cat.py:45] 'Барсик 5.0 75' has added
+ 2023-09-02 13:28:32 INFO [make_cat.py:45] 'Марсик 6.0 65' has added
+ 2023-09-02 13:28:32 INFO [make_cat.py:45] 'Парсик 4.0 55' has added
+ 2023-09-02 13:28:32 INFO [make_cat.py:46] Cats: ['Барсик 5.0 75', 'Марсик 6.0 65', 'Парсик 4.0 55']
+ 2023-09-02 13:28:34 INFO [make_cat.py:45] 'Барсик 5.0 75' has added
+ 2023-09-02 13:28:34 INFO [make_cat.py:45] 'Марсик 6.0 65' has added
+ 2023-09-02 13:28:34 INFO [make_cat.py:45] 'Парсик 4.0 55' has added
+ 2023-09-02 13:28:34 INFO [make_cat.py:46] Cats: ['Барсик 5.0 75', 'Марсик 6.0 65', 'Парсик 4.0 55']
+ 2023-09-02 13:28:34 INFO [make_cat.py:45] 'Барсик 5.0 75' has added
+ 2023-09-02 13:28:34 INFO [make_cat.py:45] 'Марсик 6.0 65' has added
+ 2023-09-02 13:28:34 INFO [make_cat.py:45] 'Парсик 4.0 55' has added
+ 2023-09-02 13:28:34 INFO [make_cat.py:46] Cats: ['Барсик 5.0 75', 'Марсик 6.0 65', 'Парсик 4.0 55']
+ 2023-09-02 13:28:34 INFO [test_make_cat.py:29] Test passed
