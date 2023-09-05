@@ -32,4 +32,5 @@ def delete_directory(dir_path: str) -> bool:
     return True
 
 
-print(delete_directory("del/del2/del2.md"))
+# print(delete_directory("del/del2"))
+# print(delete_directory("del/del2/del2.md"))

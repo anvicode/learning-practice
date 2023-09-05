@@ -1,0 +1,56 @@
+ 2023-09-05 14:39:12 INFO [test_ls.py:28] Test passed
+ 2023-09-05 14:39:32 ERROR [test_ls.py:30] Test failed
+ 2023-09-05 14:40:04 INFO [test_ls.py:28] Test passed
+ 2023-09-05 14:41:55 ERROR [test_ls.py:34] Test failed
+ 2023-09-05 14:42:44 INFO [test_ls.py:28] Test passed
+ 2023-09-05 14:42:44 ERROR [test_ls.py:51] Test failed
+ 2023-09-05 14:43:46 INFO [test_ls.py:28] Test passed
+ 2023-09-05 14:43:46 INFO [test_ls.py:49] Test passed
+ 2023-09-05 14:43:53 INFO [test_ls.py:28] Test passed
+ 2023-09-05 14:43:53 ERROR [test_ls.py:51] Test failed
+ 2023-09-05 14:43:57 INFO [test_ls.py:28] Test passed
+ 2023-09-05 14:43:57 INFO [test_ls.py:49] Test passed
+ 2023-09-05 14:48:50 INFO [test_ls.py:28] Test passed
+ 2023-09-05 14:48:50 INFO [test_ls.py:49] Test passed
+ 2023-09-05 14:48:58 INFO [test_ls.py:28] Test passed
+ 2023-09-05 14:48:58 ERROR [test_ls.py:51] Test failed Lists differ: [['./readme.md'], ['./__pycache__', './del', './ls']] != [['./readme.md'], ['./__pycache__', './deel', './ls']]
+
+First differing element 1:
+['./__pycache__', './del', './ls']
+['./__pycache__', './deel', './ls']
+
+- [['./readme.md'], ['./__pycache__', './del', './ls']]
++ [['./readme.md'], ['./__pycache__', './deel', './ls']]
+?                                          +
+
+ 2023-09-05 14:49:58 INFO [test_del_dir.py:22] Test passed
+ 2023-09-05 14:50:15 ERROR [test_del_dir.py:24] Test failed False != True
+ 2023-09-05 14:50:51 INFO [test_ls.py:28] Test passed
+ 2023-09-05 14:50:51 ERROR [test_ls.py:47] Test failed: Lists differ: [['./readme.md'], ['./__pycache__', './del', './ls']] != [['./readme.md'], ['./__pycache__', './deel', './ls']]
+
+First differing element 1:
+['./__pycache__', './del', './ls']
+['./__pycache__', './deel', './ls']
+
+- [['./readme.md'], ['./__pycache__', './del', './ls']]
++ [['./readme.md'], ['./__pycache__', './deel', './ls']]
+?                                          +
+
+ 2023-09-05 14:51:02 INFO [test_ls.py:28] Test passed
+ 2023-09-05 14:51:02 INFO [test_ls.py:45] Test passed
+ 2023-09-05 14:51:55 INFO [test_ls.py:28] Test passed
+ 2023-09-05 14:51:55 INFO [test_ls.py:46] Test passed
+ 2023-09-05 14:52:06 ERROR [test_del_dir.py:25] Test failed: False != True
+ 2023-09-05 14:52:22 INFO [test_del_dir.py:22] Test passed
+ 2023-09-05 14:53:34 INFO [test_del_dir.py:22] Test passed
+ 2023-09-05 14:53:34 ERROR [test_del_dir.py:34] Test failed: False != True
+ 2023-09-05 14:54:48 INFO [test_del_dir.py:22] Test passed
+ 2023-09-05 14:54:48 ERROR [test_del_dir.py:34] Test failed: False != True
+ 2023-09-05 14:55:56 INFO [test_del_dir.py:22] Test passed
+ 2023-09-05 14:55:56 ERROR [test_del_dir.py:34] Test failed: False != True
+ 2023-09-05 14:56:10 ERROR [test_del_dir.py:34] Test failed: False != True
+ 2023-09-05 14:57:02 INFO [test_del_dir.py:31] Test passed
+ 2023-09-05 14:57:13 INFO [test_del_dir.py:22] Test passed
+ 2023-09-05 14:57:13 ERROR [test_del_dir.py:34] Test failed: False != True
+ 2023-09-05 14:57:29 INFO [test_del_dir.py:22] Test passed
+ 2023-09-05 14:57:29 INFO [test_del_dir.py:31] Test passed
