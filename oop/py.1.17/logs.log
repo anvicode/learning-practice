@@ -1,0 +1,279 @@
+ 2023-09-06 20:11:49 DEBUG [PngImagePlugin.py:190] STREAM b'IHDR' 16 13
+ 2023-09-06 20:11:49 DEBUG [PngImagePlugin.py:190] STREAM b'PLTE' 41 18
+ 2023-09-06 20:11:49 DEBUG [PngImagePlugin.py:190] STREAM b'IDAT' 71 2154
+ 2023-09-06 20:11:49 INFO [test_main.py:23] Test passed
+ 2023-09-06 20:11:49 ERROR [test_main.py:27] Test failed False is not true
+ 2023-09-06 20:12:53 DEBUG [PngImagePlugin.py:190] STREAM b'IHDR' 16 13
+ 2023-09-06 20:12:53 DEBUG [PngImagePlugin.py:190] STREAM b'PLTE' 41 18
+ 2023-09-06 20:12:53 DEBUG [PngImagePlugin.py:190] STREAM b'IDAT' 71 2154
+ 2023-09-06 20:12:53 INFO [test_main.py:23] Test passed
+ 2023-09-06 20:14:14 DEBUG [PngImagePlugin.py:190] STREAM b'IHDR' 16 13
+ 2023-09-06 20:14:14 DEBUG [PngImagePlugin.py:190] STREAM b'PLTE' 41 18
+ 2023-09-06 20:14:14 DEBUG [PngImagePlugin.py:190] STREAM b'IDAT' 71 2154
+ 2023-09-06 20:14:14 INFO [test_main.py:24] Test passed
+ 2023-09-06 20:16:40 INFO [test_main.py:24] Test passed
+ 2023-09-06 20:16:40 INFO [test_main.py:34] Test passed
+ 2023-09-06 20:18:10 DEBUG [PngImagePlugin.py:190] STREAM b'IHDR' 16 13
+ 2023-09-06 20:18:10 DEBUG [PngImagePlugin.py:190] STREAM b'IDAT' 41 33475
+ 2023-09-06 20:18:10 INFO [test_main.py:25] Test passed
+ 2023-09-06 20:18:10 INFO [test_main.py:36] Test passed
+ 2023-09-06 20:18:21 DEBUG [PngImagePlugin.py:190] STREAM b'IHDR' 16 13
+ 2023-09-06 20:18:21 DEBUG [PngImagePlugin.py:190] STREAM b'IDAT' 41 35261
+ 2023-09-06 20:18:21 INFO [test_main.py:25] Test passed
+ 2023-09-06 20:18:21 INFO [test_main.py:36] Test passed
+ 2023-09-06 20:19:29 DEBUG [PngImagePlugin.py:190] STREAM b'IHDR' 16 13
+ 2023-09-06 20:19:29 DEBUG [PngImagePlugin.py:190] STREAM b'IDAT' 41 35864
+ 2023-09-06 20:19:29 DEBUG [PngImagePlugin.py:190] STREAM b'IHDR' 16 13
+ 2023-09-06 20:19:29 DEBUG [PngImagePlugin.py:190] STREAM b'IDAT' 41 35864
+ 2023-09-06 20:19:29 DEBUG [PngImagePlugin.py:190] STREAM b'IHDR' 16 13
+ 2023-09-06 20:19:29 DEBUG [PngImagePlugin.py:190] STREAM b'IDAT' 41 35864
+ 2023-09-06 20:19:29 INFO [test_main.py:25] Test passed
+ 2023-09-06 20:19:29 INFO [test_main.py:36] Test passed
+ 2023-09-06 20:22:36 DEBUG [PngImagePlugin.py:190] STREAM b'IHDR' 16 13
+ 2023-09-06 20:22:36 DEBUG [PngImagePlugin.py:190] STREAM b'IDAT' 41 36051
+ 2023-09-06 20:22:36 DEBUG [PngImagePlugin.py:190] STREAM b'IHDR' 16 13
+ 2023-09-06 20:22:36 DEBUG [PngImagePlugin.py:190] STREAM b'IDAT' 41 36051
+ 2023-09-06 20:22:36 DEBUG [PngImagePlugin.py:190] STREAM b'IHDR' 16 13
+ 2023-09-06 20:22:36 DEBUG [PngImagePlugin.py:190] STREAM b'IDAT' 41 36051
+ 2023-09-06 20:22:36 INFO [test_main.py:25] Test passed
+ 2023-09-06 20:22:36 INFO [test_main.py:36] Test passed
+ 2023-09-06 20:22:36 DEBUG [PngImagePlugin.py:190] STREAM b'IHDR' 16 13
+ 2023-09-06 20:22:36 DEBUG [PngImagePlugin.py:190] STREAM b'IDAT' 41 36195
+ 2023-09-06 20:22:36 DEBUG [PngImagePlugin.py:190] STREAM b'IHDR' 16 13
+ 2023-09-06 20:22:36 DEBUG [PngImagePlugin.py:190] STREAM b'IDAT' 41 36195
+ 2023-09-06 20:22:36 DEBUG [PngImagePlugin.py:190] STREAM b'IHDR' 16 13
+ 2023-09-06 20:22:36 DEBUG [PngImagePlugin.py:190] STREAM b'IDAT' 41 36195
+ 2023-09-06 20:22:36 INFO [test_main.py:48] Test passed
+ 2023-09-06 20:23:20 DEBUG [PngImagePlugin.py:190] STREAM b'IHDR' 16 13
+ 2023-09-06 20:23:20 DEBUG [PngImagePlugin.py:190] STREAM b'IDAT' 41 36195
+ 2023-09-06 20:23:20 DEBUG [PngImagePlugin.py:190] STREAM b'IHDR' 16 13
+ 2023-09-06 20:23:20 DEBUG [PngImagePlugin.py:190] STREAM b'IDAT' 41 36195
+ 2023-09-06 20:23:20 DEBUG [PngImagePlugin.py:190] STREAM b'IHDR' 16 13
+ 2023-09-06 20:23:20 DEBUG [PngImagePlugin.py:190] STREAM b'IDAT' 41 36195
+ 2023-09-06 20:23:20 INFO [test_main.py:25] Test passed
+ 2023-09-06 20:23:20 INFO [test_main.py:36] Test passed
+ 2023-09-06 20:23:20 DEBUG [PngImagePlugin.py:190] STREAM b'IHDR' 16 13
+ 2023-09-06 20:23:20 DEBUG [PngImagePlugin.py:190] STREAM b'IDAT' 41 36201
+ 2023-09-06 20:23:20 DEBUG [PngImagePlugin.py:190] STREAM b'IHDR' 16 13
+ 2023-09-06 20:23:20 DEBUG [PngImagePlugin.py:190] STREAM b'IDAT' 41 36201
+ 2023-09-06 20:23:20 DEBUG [PngImagePlugin.py:190] STREAM b'IHDR' 16 13
+ 2023-09-06 20:23:20 DEBUG [PngImagePlugin.py:190] STREAM b'IDAT' 41 36201
+ 2023-09-06 20:23:20 ERROR [test_main.py:52] Test failed False is not true
+ 2023-09-06 20:23:39 DEBUG [PngImagePlugin.py:190] STREAM b'IHDR' 16 13
+ 2023-09-06 20:23:39 DEBUG [PngImagePlugin.py:190] STREAM b'IDAT' 41 36201
+ 2023-09-06 20:23:39 DEBUG [PngImagePlugin.py:190] STREAM b'IHDR' 16 13
+ 2023-09-06 20:23:39 DEBUG [PngImagePlugin.py:190] STREAM b'IDAT' 41 36201
+ 2023-09-06 20:23:39 DEBUG [PngImagePlugin.py:190] STREAM b'IHDR' 16 13
+ 2023-09-06 20:23:39 DEBUG [PngImagePlugin.py:190] STREAM b'IDAT' 41 36201
+ 2023-09-06 20:23:39 INFO [test_main.py:25] Test passed
+ 2023-09-06 20:23:39 INFO [test_main.py:36] Test passed
+ 2023-09-06 20:23:39 DEBUG [PngImagePlugin.py:190] STREAM b'IHDR' 16 13
+ 2023-09-06 20:23:39 DEBUG [PngImagePlugin.py:190] STREAM b'IDAT' 41 36264
+ 2023-09-06 20:23:39 DEBUG [PngImagePlugin.py:190] STREAM b'IHDR' 16 13
+ 2023-09-06 20:23:39 DEBUG [PngImagePlugin.py:190] STREAM b'IDAT' 41 36264
+ 2023-09-06 20:23:39 DEBUG [PngImagePlugin.py:190] STREAM b'IHDR' 16 13
+ 2023-09-06 20:23:39 DEBUG [PngImagePlugin.py:190] STREAM b'IDAT' 41 36264
+ 2023-09-06 20:23:39 INFO [test_main.py:48] Test passed
+ 2023-09-06 20:27:35 DEBUG [PngImagePlugin.py:190] STREAM b'IHDR' 16 13
+ 2023-09-06 20:27:35 DEBUG [PngImagePlugin.py:190] STREAM b'IDAT' 41 36264
+ 2023-09-06 20:27:35 ERROR [test_main.py:51] Test failed False is not true
+ 2023-09-06 20:27:35 DEBUG [PngImagePlugin.py:190] STREAM b'IHDR' 16 13
+ 2023-09-06 20:27:35 DEBUG [PngImagePlugin.py:190] STREAM b'IDAT' 41 36264
+ 2023-09-06 20:27:35 ERROR [test_main.py:61] Test failed True is not false
+ 2023-09-06 20:27:35 DEBUG [PngImagePlugin.py:190] STREAM b'IHDR' 16 13
+ 2023-09-06 20:27:35 DEBUG [PngImagePlugin.py:190] STREAM b'IDAT' 41 36264
+ 2023-09-06 20:27:35 INFO [test_main.py:25] Test passed
+ 2023-09-06 20:27:35 INFO [test_main.py:36] Test passed
+ 2023-09-06 20:28:00 ERROR [test_main.py:51] Test failed False is not true
+ 2023-09-06 20:28:00 ERROR [test_main.py:61] Test failed True is not false
+ 2023-09-06 20:28:00 INFO [test_main.py:25] Test passed
+ 2023-09-06 20:28:00 INFO [test_main.py:36] Test passed
+ 2023-09-06 20:29:52 INFO [test_main.py:24] Test passed
+ 2023-09-06 20:31:11 INFO [test_main.py:24] <bound method TestMain.test_convert_img_no_file of <__main__.TestMain testMethod=test_convert_img_no_file>>Test passed
+ 2023-09-06 20:32:21 ERROR [test_main.py:61] Test failed False is not true
+ 2023-09-06 20:32:21 ERROR [test_main.py:38] Test failed False is not true
+ 2023-09-06 20:32:21 ERROR [test_main.py:49] Test failed False is not true
+ 2023-09-06 20:33:23 DEBUG [PngImagePlugin.py:190] STREAM b'IHDR' 16 13
+ 2023-09-06 20:33:23 DEBUG [PngImagePlugin.py:190] STREAM b'PLTE' 41 18
+ 2023-09-06 20:33:23 DEBUG [PngImagePlugin.py:190] STREAM b'IDAT' 71 2154
+ 2023-09-06 20:33:23 ERROR [test_main.py:61] Test failed False is not true
+ 2023-09-06 20:33:23 DEBUG [PngImagePlugin.py:190] STREAM b'IHDR' 16 13
+ 2023-09-06 20:33:23 DEBUG [PngImagePlugin.py:190] STREAM b'PLTE' 41 18
+ 2023-09-06 20:33:23 DEBUG [PngImagePlugin.py:190] STREAM b'IDAT' 71 2154
+ 2023-09-06 20:33:23 INFO [test_main.py:35] Test passed
+ 2023-09-06 20:33:23 INFO [test_main.py:46] Test passed
+ 2023-09-06 20:33:26 DEBUG [PngImagePlugin.py:190] STREAM b'IHDR' 16 13
+ 2023-09-06 20:33:26 DEBUG [PngImagePlugin.py:190] STREAM b'IDAT' 41 33475
+ 2023-09-06 20:33:26 ERROR [test_main.py:61] Test failed False is not true
+ 2023-09-06 20:33:26 DEBUG [PngImagePlugin.py:190] STREAM b'IHDR' 16 13
+ 2023-09-06 20:33:26 DEBUG [PngImagePlugin.py:190] STREAM b'IDAT' 41 33475
+ 2023-09-06 20:33:26 INFO [test_main.py:35] Test passed
+ 2023-09-06 20:33:26 INFO [test_main.py:46] Test passed
+ 2023-09-06 20:34:15 DEBUG [PngImagePlugin.py:190] STREAM b'IHDR' 16 13
+ 2023-09-06 20:34:15 DEBUG [PngImagePlugin.py:190] STREAM b'IDAT' 41 35261
+ 2023-09-06 20:34:15 DEBUG [PngImagePlugin.py:190] STREAM b'IHDR' 16 13
+ 2023-09-06 20:34:15 DEBUG [PngImagePlugin.py:190] STREAM b'IDAT' 41 35261
+ 2023-09-06 20:34:15 DEBUG [PngImagePlugin.py:190] STREAM b'IHDR' 16 13
+ 2023-09-06 20:34:15 DEBUG [PngImagePlugin.py:190] STREAM b'IDAT' 41 35261
+ 2023-09-06 20:34:15 INFO [test_main.py:58] Test passed
+ 2023-09-06 20:34:15 DEBUG [PngImagePlugin.py:190] STREAM b'IHDR' 16 13
+ 2023-09-06 20:34:15 DEBUG [PngImagePlugin.py:190] STREAM b'IDAT' 41 35261
+ 2023-09-06 20:34:15 DEBUG [PngImagePlugin.py:190] STREAM b'IHDR' 16 13
+ 2023-09-06 20:34:15 DEBUG [PngImagePlugin.py:190] STREAM b'IDAT' 41 35261
+ 2023-09-06 20:34:15 DEBUG [PngImagePlugin.py:190] STREAM b'IHDR' 16 13
+ 2023-09-06 20:34:15 DEBUG [PngImagePlugin.py:190] STREAM b'IDAT' 41 35261
+ 2023-09-06 20:34:15 INFO [test_main.py:35] Test passed
+ 2023-09-06 20:34:15 INFO [test_main.py:46] Test passed
+ 2023-09-06 20:37:59 INFO [test_main.py:24] Test passed
+ 2023-09-06 20:38:51 DEBUG [PngImagePlugin.py:190] STREAM b'IHDR' 16 13
+ 2023-09-06 20:38:51 DEBUG [PngImagePlugin.py:190] STREAM b'IDAT' 41 35864
+ 2023-09-06 20:38:51 ERROR [test_main.py:51] Test failed False is not true
+ 2023-09-06 20:38:51 DEBUG [PngImagePlugin.py:190] STREAM b'IHDR' 16 13
+ 2023-09-06 20:38:51 DEBUG [PngImagePlugin.py:190] STREAM b'IDAT' 41 35864
+ 2023-09-06 20:38:51 INFO [test_main.py:25] Test passed
+ 2023-09-06 20:38:51 INFO [test_main.py:36] Test passed
+ 2023-09-06 20:38:53 DEBUG [PngImagePlugin.py:190] STREAM b'IHDR' 16 13
+ 2023-09-06 20:38:53 DEBUG [PngImagePlugin.py:190] STREAM b'IDAT' 41 36051
+ 2023-09-06 20:38:53 ERROR [test_main.py:51] Test failed False is not true
+ 2023-09-06 20:38:53 DEBUG [PngImagePlugin.py:190] STREAM b'IHDR' 16 13
+ 2023-09-06 20:38:53 DEBUG [PngImagePlugin.py:190] STREAM b'IDAT' 41 36051
+ 2023-09-06 20:38:53 INFO [test_main.py:25] Test passed
+ 2023-09-06 20:38:53 INFO [test_main.py:36] Test passed
+ 2023-09-06 20:39:29 DEBUG [PngImagePlugin.py:190] STREAM b'IHDR' 16 13
+ 2023-09-06 20:39:29 DEBUG [PngImagePlugin.py:190] STREAM b'IDAT' 41 36195
+ 2023-09-06 20:39:29 DEBUG [PngImagePlugin.py:190] STREAM b'IHDR' 16 13
+ 2023-09-06 20:39:29 DEBUG [PngImagePlugin.py:190] STREAM b'IDAT' 41 36195
+ 2023-09-06 20:39:29 DEBUG [PngImagePlugin.py:190] STREAM b'IHDR' 16 13
+ 2023-09-06 20:39:29 DEBUG [PngImagePlugin.py:190] STREAM b'IDAT' 41 36195
+ 2023-09-06 20:39:29 INFO [test_main.py:48] Test passed
+ 2023-09-06 20:39:29 DEBUG [PngImagePlugin.py:190] STREAM b'IHDR' 16 13
+ 2023-09-06 20:39:29 DEBUG [PngImagePlugin.py:190] STREAM b'IDAT' 41 36195
+ 2023-09-06 20:39:29 DEBUG [PngImagePlugin.py:190] STREAM b'IHDR' 16 13
+ 2023-09-06 20:39:29 DEBUG [PngImagePlugin.py:190] STREAM b'IDAT' 41 36195
+ 2023-09-06 20:39:29 DEBUG [PngImagePlugin.py:190] STREAM b'IHDR' 16 13
+ 2023-09-06 20:39:29 DEBUG [PngImagePlugin.py:190] STREAM b'IDAT' 41 36195
+ 2023-09-06 20:39:29 INFO [test_main.py:25] Test passed
+ 2023-09-06 20:39:29 INFO [test_main.py:36] Test passed
+ 2023-09-06 22:00:15 DEBUG [PngImagePlugin.py:190] STREAM b'IHDR' 16 13
+ 2023-09-06 22:00:15 DEBUG [PngImagePlugin.py:190] STREAM b'IDAT' 41 36201
+ 2023-09-06 22:00:15 DEBUG [PngImagePlugin.py:190] STREAM b'IHDR' 16 13
+ 2023-09-06 22:00:15 DEBUG [PngImagePlugin.py:190] STREAM b'IDAT' 41 1216
+ 2023-09-06 22:00:15 DEBUG [PngImagePlugin.py:190] STREAM b'IHDR' 16 13
+ 2023-09-06 22:00:15 DEBUG [PngImagePlugin.py:190] STREAM b'IDAT' 41 36201
+ 2023-09-06 22:00:15 DEBUG [PngImagePlugin.py:190] STREAM b'IHDR' 16 13
+ 2023-09-06 22:00:15 DEBUG [PngImagePlugin.py:190] STREAM b'IDAT' 41 1216
+ 2023-09-06 22:00:15 INFO [test_extended_main.py:25] Test passed
+ 2023-09-06 22:00:15 DEBUG [PngImagePlugin.py:190] STREAM b'IHDR' 16 13
+ 2023-09-06 22:00:15 DEBUG [PngImagePlugin.py:190] STREAM b'IDAT' 41 1216
+ 2023-09-06 22:00:15 DEBUG [PngImagePlugin.py:190] STREAM b'IHDR' 16 13
+ 2023-09-06 22:00:15 DEBUG [PngImagePlugin.py:190] STREAM b'IDAT' 41 1216
+ 2023-09-06 22:00:15 INFO [test_extended_main.py:36] Test passed
+ 2023-09-06 22:02:49 DEBUG [PngImagePlugin.py:190] STREAM b'IHDR' 16 13
+ 2023-09-06 22:02:49 DEBUG [PngImagePlugin.py:190] STREAM b'PLTE' 41 18
+ 2023-09-06 22:02:49 DEBUG [PngImagePlugin.py:190] STREAM b'IDAT' 71 2154
+ 2023-09-06 22:02:49 DEBUG [PngImagePlugin.py:190] STREAM b'IHDR' 16 13
+ 2023-09-06 22:02:49 DEBUG [PngImagePlugin.py:190] STREAM b'IDAT' 41 1216
+ 2023-09-06 22:02:49 DEBUG [Image.py:555] Error closing: 'Image' object has no attribute 'fp'
+ 2023-09-06 22:02:49 DEBUG [PngImagePlugin.py:190] STREAM b'IHDR' 16 13
+ 2023-09-06 22:02:49 DEBUG [PngImagePlugin.py:190] STREAM b'PLTE' 41 18
+ 2023-09-06 22:02:49 DEBUG [PngImagePlugin.py:190] STREAM b'IDAT' 71 2154
+ 2023-09-06 22:02:49 DEBUG [PngImagePlugin.py:190] STREAM b'IHDR' 16 13
+ 2023-09-06 22:02:49 DEBUG [PngImagePlugin.py:190] STREAM b'IDAT' 41 1216
+ 2023-09-06 22:02:49 DEBUG [Image.py:555] Error closing: 'Image' object has no attribute 'fp'
+ 2023-09-06 22:02:49 DEBUG [PngImagePlugin.py:190] STREAM b'IHDR' 16 13
+ 2023-09-06 22:02:49 DEBUG [PngImagePlugin.py:190] STREAM b'PLTE' 41 18
+ 2023-09-06 22:02:49 DEBUG [PngImagePlugin.py:190] STREAM b'IDAT' 71 2154
+ 2023-09-06 22:02:49 DEBUG [PngImagePlugin.py:190] STREAM b'IHDR' 16 13
+ 2023-09-06 22:02:49 DEBUG [PngImagePlugin.py:190] STREAM b'IDAT' 41 1216
+ 2023-09-06 22:02:49 DEBUG [Image.py:555] Error closing: 'Image' object has no attribute 'fp'
+ 2023-09-06 22:02:49 ERROR [test_extended_main.py:51] Test failed False is not true
+ 2023-09-06 22:03:53 DEBUG [PngImagePlugin.py:190] STREAM b'IHDR' 16 13
+ 2023-09-06 22:03:53 DEBUG [PngImagePlugin.py:190] STREAM b'PLTE' 41 18
+ 2023-09-06 22:03:53 DEBUG [PngImagePlugin.py:190] STREAM b'IDAT' 71 2154
+ 2023-09-06 22:03:53 DEBUG [PngImagePlugin.py:190] STREAM b'IHDR' 16 13
+ 2023-09-06 22:03:53 DEBUG [PngImagePlugin.py:190] STREAM b'IDAT' 41 1216
+ 2023-09-06 22:03:53 DEBUG [PngImagePlugin.py:190] STREAM b'IHDR' 16 13
+ 2023-09-06 22:03:53 DEBUG [PngImagePlugin.py:190] STREAM b'PLTE' 41 18
+ 2023-09-06 22:03:53 DEBUG [PngImagePlugin.py:190] STREAM b'IDAT' 71 2154
+ 2023-09-06 22:03:53 DEBUG [PngImagePlugin.py:190] STREAM b'IHDR' 16 13
+ 2023-09-06 22:03:53 DEBUG [PngImagePlugin.py:190] STREAM b'IDAT' 41 1216
+ 2023-09-06 22:03:53 DEBUG [PngImagePlugin.py:190] STREAM b'IHDR' 16 13
+ 2023-09-06 22:03:53 DEBUG [PngImagePlugin.py:190] STREAM b'PLTE' 41 18
+ 2023-09-06 22:03:53 DEBUG [PngImagePlugin.py:190] STREAM b'IDAT' 71 2154
+ 2023-09-06 22:03:53 DEBUG [PngImagePlugin.py:190] STREAM b'IHDR' 16 13
+ 2023-09-06 22:03:53 DEBUG [PngImagePlugin.py:190] STREAM b'IDAT' 41 1216
+ 2023-09-06 22:03:53 ERROR [test_extended_main.py:51] Test failed False is not true
+ 2023-09-06 22:04:58 DEBUG [PngImagePlugin.py:190] STREAM b'IHDR' 16 13
+ 2023-09-06 22:04:58 DEBUG [PngImagePlugin.py:190] STREAM b'PLTE' 41 18
+ 2023-09-06 22:04:58 DEBUG [PngImagePlugin.py:190] STREAM b'IDAT' 71 2154
+ 2023-09-06 22:04:58 DEBUG [PngImagePlugin.py:190] STREAM b'IHDR' 16 13
+ 2023-09-06 22:04:58 DEBUG [PngImagePlugin.py:190] STREAM b'IDAT' 41 1216
+ 2023-09-06 22:04:58 DEBUG [PngImagePlugin.py:190] STREAM b'IHDR' 16 13
+ 2023-09-06 22:04:58 DEBUG [PngImagePlugin.py:190] STREAM b'PLTE' 41 18
+ 2023-09-06 22:04:58 DEBUG [PngImagePlugin.py:190] STREAM b'IDAT' 71 2154
+ 2023-09-06 22:04:58 DEBUG [PngImagePlugin.py:190] STREAM b'IHDR' 16 13
+ 2023-09-06 22:04:58 DEBUG [PngImagePlugin.py:190] STREAM b'IDAT' 41 1216
+ 2023-09-06 22:04:58 DEBUG [PngImagePlugin.py:190] STREAM b'IHDR' 16 13
+ 2023-09-06 22:04:58 DEBUG [PngImagePlugin.py:190] STREAM b'PLTE' 41 18
+ 2023-09-06 22:04:58 DEBUG [PngImagePlugin.py:190] STREAM b'IDAT' 71 2154
+ 2023-09-06 22:04:58 DEBUG [PngImagePlugin.py:190] STREAM b'IHDR' 16 13
+ 2023-09-06 22:04:58 DEBUG [PngImagePlugin.py:190] STREAM b'IDAT' 41 1216
+ 2023-09-06 22:04:58 INFO [test_extended_main.py:48] Test passed
+ 2023-09-06 22:05:14 DEBUG [PngImagePlugin.py:190] STREAM b'IHDR' 16 13
+ 2023-09-06 22:05:14 DEBUG [PngImagePlugin.py:190] STREAM b'PLTE' 41 18
+ 2023-09-06 22:05:14 DEBUG [PngImagePlugin.py:190] STREAM b'IDAT' 71 2154
+ 2023-09-06 22:05:14 DEBUG [PngImagePlugin.py:190] STREAM b'IHDR' 16 13
+ 2023-09-06 22:05:14 DEBUG [PngImagePlugin.py:190] STREAM b'IDAT' 41 1216
+ 2023-09-06 22:05:14 DEBUG [Image.py:555] Error closing: 'Image' object has no attribute 'fp'
+ 2023-09-06 22:05:14 DEBUG [PngImagePlugin.py:190] STREAM b'IHDR' 16 13
+ 2023-09-06 22:05:14 DEBUG [PngImagePlugin.py:190] STREAM b'PLTE' 41 18
+ 2023-09-06 22:05:14 DEBUG [PngImagePlugin.py:190] STREAM b'IDAT' 71 2154
+ 2023-09-06 22:05:14 DEBUG [PngImagePlugin.py:190] STREAM b'IHDR' 16 13
+ 2023-09-06 22:05:14 DEBUG [PngImagePlugin.py:190] STREAM b'IDAT' 41 1216
+ 2023-09-06 22:05:14 DEBUG [Image.py:555] Error closing: 'Image' object has no attribute 'fp'
+ 2023-09-06 22:05:14 DEBUG [PngImagePlugin.py:190] STREAM b'IHDR' 16 13
+ 2023-09-06 22:05:14 DEBUG [PngImagePlugin.py:190] STREAM b'PLTE' 41 18
+ 2023-09-06 22:05:14 DEBUG [PngImagePlugin.py:190] STREAM b'IDAT' 71 2154
+ 2023-09-06 22:05:14 DEBUG [PngImagePlugin.py:190] STREAM b'IHDR' 16 13
+ 2023-09-06 22:05:14 DEBUG [PngImagePlugin.py:190] STREAM b'IDAT' 41 1216
+ 2023-09-06 22:05:14 DEBUG [Image.py:555] Error closing: 'Image' object has no attribute 'fp'
+ 2023-09-06 22:05:14 INFO [test_extended_main.py:48] Test passed
+ 2023-09-06 22:05:45 DEBUG [PngImagePlugin.py:190] STREAM b'IHDR' 16 13
+ 2023-09-06 22:05:45 DEBUG [PngImagePlugin.py:190] STREAM b'PLTE' 41 18
+ 2023-09-06 22:05:45 DEBUG [PngImagePlugin.py:190] STREAM b'IDAT' 71 2154
+ 2023-09-06 22:05:45 DEBUG [PngImagePlugin.py:190] STREAM b'IHDR' 16 13
+ 2023-09-06 22:05:45 DEBUG [PngImagePlugin.py:190] STREAM b'IDAT' 41 1216
+ 2023-09-06 22:05:45 DEBUG [PngImagePlugin.py:190] STREAM b'IHDR' 16 13
+ 2023-09-06 22:05:45 DEBUG [PngImagePlugin.py:190] STREAM b'PLTE' 41 18
+ 2023-09-06 22:05:45 DEBUG [PngImagePlugin.py:190] STREAM b'IDAT' 71 2154
+ 2023-09-06 22:05:45 DEBUG [PngImagePlugin.py:190] STREAM b'IHDR' 16 13
+ 2023-09-06 22:05:45 DEBUG [PngImagePlugin.py:190] STREAM b'IDAT' 41 1216
+ 2023-09-06 22:05:45 DEBUG [PngImagePlugin.py:190] STREAM b'IHDR' 16 13
+ 2023-09-06 22:05:45 DEBUG [PngImagePlugin.py:190] STREAM b'PLTE' 41 18
+ 2023-09-06 22:05:45 DEBUG [PngImagePlugin.py:190] STREAM b'IDAT' 71 2154
+ 2023-09-06 22:05:45 DEBUG [PngImagePlugin.py:190] STREAM b'IHDR' 16 13
+ 2023-09-06 22:05:45 DEBUG [PngImagePlugin.py:190] STREAM b'IDAT' 41 1216
+ 2023-09-06 22:05:45 INFO [test_extended_main.py:48] Test passed
+ 2023-09-06 22:06:39 DEBUG [PngImagePlugin.py:190] STREAM b'IHDR' 16 13
+ 2023-09-06 22:06:39 DEBUG [PngImagePlugin.py:190] STREAM b'PLTE' 41 18
+ 2023-09-06 22:06:39 DEBUG [PngImagePlugin.py:190] STREAM b'IDAT' 71 2154
+ 2023-09-06 22:06:39 DEBUG [PngImagePlugin.py:190] STREAM b'IHDR' 16 13
+ 2023-09-06 22:06:39 DEBUG [PngImagePlugin.py:190] STREAM b'IDAT' 41 1216
+ 2023-09-06 22:06:39 DEBUG [PngImagePlugin.py:190] STREAM b'IHDR' 16 13
+ 2023-09-06 22:06:39 DEBUG [PngImagePlugin.py:190] STREAM b'PLTE' 41 18
+ 2023-09-06 22:06:39 DEBUG [PngImagePlugin.py:190] STREAM b'IDAT' 71 2154
+ 2023-09-06 22:06:39 DEBUG [PngImagePlugin.py:190] STREAM b'IHDR' 16 13
+ 2023-09-06 22:06:39 DEBUG [PngImagePlugin.py:190] STREAM b'IDAT' 41 1216
+ 2023-09-06 22:06:39 DEBUG [PngImagePlugin.py:190] STREAM b'IHDR' 16 13
+ 2023-09-06 22:06:39 DEBUG [PngImagePlugin.py:190] STREAM b'PLTE' 41 18
+ 2023-09-06 22:06:39 DEBUG [PngImagePlugin.py:190] STREAM b'IDAT' 71 2154
+ 2023-09-06 22:06:39 DEBUG [PngImagePlugin.py:190] STREAM b'IHDR' 16 13
+ 2023-09-06 22:06:39 DEBUG [PngImagePlugin.py:190] STREAM b'IDAT' 41 1216
+ 2023-09-06 22:06:39 INFO [test_extended_main.py:25] Test passed
+ 2023-09-06 22:06:39 DEBUG [PngImagePlugin.py:190] STREAM b'IHDR' 16 13
+ 2023-09-06 22:06:39 DEBUG [PngImagePlugin.py:190] STREAM b'IDAT' 41 1216
+ 2023-09-06 22:06:39 DEBUG [PngImagePlugin.py:190] STREAM b'IHDR' 16 13
+ 2023-09-06 22:06:39 DEBUG [PngImagePlugin.py:190] STREAM b'IDAT' 41 1216
+ 2023-09-06 22:06:39 DEBUG [PngImagePlugin.py:190] STREAM b'IHDR' 16 13
+ 2023-09-06 22:06:39 DEBUG [PngImagePlugin.py:190] STREAM b'IDAT' 41 1216
+ 2023-09-06 22:06:39 INFO [test_extended_main.py:36] Test passed
