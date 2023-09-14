@@ -12,6 +12,9 @@ def find_repeated_values(val, n_times):
     # Creating an empty dictionary for counting numbers
     value_counts = {}
 
+    # Creating a list of values that repeat at least n times
+    res = []
+
     # Loop through each value in the list
     for value in val:
         # If the value already exists in the dictionary,
@@ -20,7 +23,9 @@ def find_repeated_values(val, n_times):
         # {value: i + 1}
         if value in value_counts:
             value_counts[value] += 1
-
+            # # If the count = n_times, add to res
+            if value_counts[value] == n_times:
+                res.append(value)
         # If the value does not exist in the dictionary,
         # add it with a counter of 1
         # VALUE first time appears
@@ -28,8 +33,7 @@ def find_repeated_values(val, n_times):
         else:
             value_counts[value] = 1
 
-    # Returning a list of values that repeat at least n times
-    return [value for value, count in value_counts.items() if count >= n_times]
+    return res
 
 
 # Print the result
