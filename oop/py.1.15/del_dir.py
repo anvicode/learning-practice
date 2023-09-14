@@ -1,36 +1,30 @@
 # type: ignore
 import os
 
+from ls import get_files_subdirs_list
+
 
 def delete_directory(dir_path: str) -> bool:
-    # check if path exists
-    if not os.path.exists(dir_path):
-        print(f"Directory {dir_path} does not exist")
-        return False
+    scan = get_files_subdirs_list(dir_path, "md", False)
 
-    # check if path is a directory
-    if not os.path.isdir(dir_path):
-        print(f"Path {dir_path} is not a directory")
-        return False
-
-    # getting list of files and subdirectories
-    items = os.listdir(dir_path)
-
-    # check if directory has subdirectories
-    for item in items:
-        if os.path.isdir(os.path.join(dir_path, item)):
-            print(f"Directory {dir_path} has subdirectories")
-            return False
+    # if it has subdirectories
+    if len(scan[1]) > 0:
+        return Exception("Error: Directory has subdirectories")
 
     # del all files in directory
-    for item in items:
-        os.remove(os.path.join(dir_path, item))
+    try:
+        for item in scan[0]:
+            os.remove(item)
+    except Exception as err:
+        return err
 
     # del dir
-    os.rmdir(dir_path)
-    print(f"Directory {dir_path} has been deleted")
+    try:
+        os.rmdir(dir_path)
+    except Exception as err:
+        return err
     return True
 
 
 # print(delete_directory("del/del2"))
-# print(delete_directory("del/del2/del2.md"))
+print(delete_directory("del/del2/del2.md"))
