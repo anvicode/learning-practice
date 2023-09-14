@@ -1,4 +1,5 @@
 # type: ignore
+""" Module with create_dict_with_random_pairs function """
 import random
 import string
 
