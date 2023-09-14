@@ -12,16 +12,16 @@ def create_dict_with_random_pairs():
         # Adding 100 random pairs to the dictionary
         for _ in range(100):
             # Making a random key from 1 to 100
-            key = random.randint(1, 100)
+            k = random.randint(1, 100)
 
             # Making a list from 5 random latin letters lower and upper case
             # and converting it to a string
-            value = "".join(
+            val = "".join(
                 random.choices(string.ascii_lowercase + string.ascii_uppercase, k=5)
             )
 
             # Adding random key and generated value into the dictionary
-            my_dict[key] = value
+            my_dict[k] = val
 
     return my_dict
 
