@@ -10,7 +10,7 @@ def create_dict_with_random_pairs():
     # Til the number of pairs is less than 100
     while len(my_dict) < 100:
         # Adding 100 random pairs to the dictionary
-        for i in range(100):
+        for _ in range(100):
             # Making a random key from 1 to 100
             key = random.randint(1, 100)
 
