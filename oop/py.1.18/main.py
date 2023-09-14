@@ -31,8 +31,8 @@ if __name__ == "__main__":
     create_dict_with_random_pairs()
 
     # Reading and printing all values by keys
-    for key in my_dict:
-        print(f"Key: {key}, Value: {my_dict[key]}")
+    for key, value in my_dict.items():
+        print(f"Key: {key}, Value: {value}")
 
     # Delete all pairs from the dictionary
     my_dict.clear()
