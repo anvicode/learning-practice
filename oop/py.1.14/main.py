@@ -14,10 +14,13 @@ logger = logging.getLogger(__name__)
 
 
 def make_files():
-    for i in range(10):
-        with open(f"file{i + 1}.txt", "wt") as f:
-            f.write(f"{randint(1, 10)}\n{randint(1, 10)}\n{randint(1, 10)}")
-            logging.info(f"file{i + 1}.txt created")
+    try:
+        for i in range(10):
+            with open(f"file{i + 1}.txt", "wt") as f:
+                f.write(f"{randint(1, 10)}\n{randint(1, 10)}\n{randint(1, 10)}")
+                logging.info(f"file{i + 1}.txt created")
+    except Exception as error:
+        logger.error(error)
 
 
 make_files()
@@ -30,10 +33,10 @@ def sum_of_two_files(file1, file2):
             fl2 = (int(line) for line in f2)
             res = sum(fl1) + sum(fl2)
             logging.info(f"Sum of {file1} and {file2} = {res}")
-            return res
+            return [res, 0]
     except Exception as error:
         logger.error(error)
-        return error
+        return [0, 1]
 
 
 file1 = f"file{randint(1, 10)}.txt"

@@ -273,3 +273,36 @@ First differing element 2:
  2023-09-02 13:28:34 INFO [make_cat.py:45] 'Парсик 4.0 55' has added
  2023-09-02 13:28:34 INFO [make_cat.py:46] Cats: ['Барсик 5.0 75', 'Марсик 6.0 65', 'Парсик 4.0 55']
  2023-09-02 13:28:34 INFO [test_make_cat.py:29] Test passed
+ 2023-09-14 15:11:58 INFO [main.py:20] file1.txt created
+ 2023-09-14 15:11:58 INFO [main.py:20] file2.txt created
+ 2023-09-14 15:11:58 INFO [main.py:20] file3.txt created
+ 2023-09-14 15:11:58 INFO [main.py:20] file4.txt created
+ 2023-09-14 15:11:58 INFO [main.py:20] file5.txt created
+ 2023-09-14 15:11:58 INFO [main.py:20] file6.txt created
+ 2023-09-14 15:11:58 INFO [main.py:20] file7.txt created
+ 2023-09-14 15:11:58 INFO [main.py:20] file8.txt created
+ 2023-09-14 15:11:58 INFO [main.py:20] file9.txt created
+ 2023-09-14 15:11:58 INFO [main.py:20] file10.txt created
+ 2023-09-14 15:11:58 INFO [main.py:32] Sum of file7.txt and file3.txt = 36
+ 2023-09-14 15:25:09 INFO [main.py:21] file1.txt created
+ 2023-09-14 15:25:09 INFO [main.py:21] file2.txt created
+ 2023-09-14 15:25:09 INFO [main.py:21] file3.txt created
+ 2023-09-14 15:25:09 INFO [main.py:21] file4.txt created
+ 2023-09-14 15:25:09 INFO [main.py:21] file5.txt created
+ 2023-09-14 15:25:09 INFO [main.py:21] file6.txt created
+ 2023-09-14 15:25:09 INFO [main.py:21] file7.txt created
+ 2023-09-14 15:25:09 INFO [main.py:21] file8.txt created
+ 2023-09-14 15:25:09 INFO [main.py:21] file9.txt created
+ 2023-09-14 15:25:09 INFO [main.py:21] file10.txt created
+ 2023-09-14 15:25:09 INFO [main.py:35] Sum of file9.txt and file7.txt = 33
+ 2023-09-14 15:32:11 INFO [main.py:21] file1.txt created
+ 2023-09-14 15:32:11 INFO [main.py:21] file2.txt created
+ 2023-09-14 15:32:11 INFO [main.py:21] file3.txt created
+ 2023-09-14 15:32:11 INFO [main.py:21] file4.txt created
+ 2023-09-14 15:32:11 INFO [main.py:21] file5.txt created
+ 2023-09-14 15:32:11 INFO [main.py:21] file6.txt created
+ 2023-09-14 15:32:11 INFO [main.py:21] file7.txt created
+ 2023-09-14 15:32:11 INFO [main.py:21] file8.txt created
+ 2023-09-14 15:32:11 INFO [main.py:21] file9.txt created
+ 2023-09-14 15:32:11 INFO [main.py:21] file10.txt created
+ 2023-09-14 15:32:11 INFO [main.py:35] Sum of file6.txt and file8.txt = 40
