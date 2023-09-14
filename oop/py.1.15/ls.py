@@ -13,20 +13,20 @@ def get_files_subdirs_list(path: str, ext: str, flag: bool) -> list[list[str]]:
             for file in files:
                 if file.endswith("." + ext):
                     files_list.append(os.path.join(root, file))
-            for dir in dirs:
-                dirs_list.append(os.path.join(root, dir))
+            for d in dirs:
+                dirs_list.append(os.path.join(root, d))
         else:
             break
 
     return [files_list, dirs_list]
 
 
-print(get_files_subdirs_list(".", "md", True))
-print(get_files_subdirs_list("ls", "md", True))
-print(get_files_subdirs_list("ls/sub_ls", "md", True))
-print(get_files_subdirs_list("ls/sub_ls/ss_ls", "md", True))
+# print(get_files_subdirs_list(".", "md", True))
+# print(get_files_subdirs_list("ls", "md", True))
+# print(get_files_subdirs_list("ls/sub_ls", "md", True))
+# print(get_files_subdirs_list("ls/sub_ls/ss_ls", "md", True))
 
-print(get_files_subdirs_list(".", "md", False))
-print(get_files_subdirs_list("ls", "md", False))
-print(get_files_subdirs_list("ls/sub_ls", "md", False))
-print(get_files_subdirs_list("ls/sub_ls/ss_ls", "md", False))
+# print(get_files_subdirs_list(".", "md", False))
+# print(get_files_subdirs_list("ls", "md", False))
+# print(get_files_subdirs_list("ls/sub_ls", "md", False))
+# print(get_files_subdirs_list("ls/sub_ls/ss_ls", "md", False))
