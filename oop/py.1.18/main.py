@@ -7,6 +7,7 @@ my_dict = {}
 
 
 def create_dict_with_random_pairs():
+    """Generates a dictionary with 100 random key-value pairs."""
     # Til the number of pairs is less than 100
     while len(my_dict) < 100:
         # Adding 100 random pairs to the dictionary
